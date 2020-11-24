@@ -1,0 +1,13 @@
+1 : brand,full,hdtv,inch,led,new,sale,samsung,smart,vizio
+2 : abgn,addict,alway,amount,brother,cash,class,consumpt,first,time
+3 : also,bluetooth,cash,deal,ebay,inch,new,panason,smart,ultra
+4 : also,back,broke,buy,freeview,onlin,russian,servic,smart,web
+5 : air,app,asia,big,boost,broadcast,launch,mous,online,remot
+6 : amortalblow,bring,fare,host,idiot,netflix,phone,smart,think,watch
+7 : africa,expand,footprint,home,plan,plus,said,servic,showmax,youtub
+8 : amp,follow,friend,link,onedayonlycoza,onli,samsung,smart,subscrib,win
+9 : box,can,dish,get,just,one,phone,samsung,smart,stream
+10 : articl,comed,coverag,eurovis,even,funni,genius,hahahaha,nickybyrn,radio
+11 : android,box,core,fulli,kodi,load,quad,smart,wifi,xbmc
+12 : amlogic,cant,inch,just,love,new,pocket,samsung,smart,via
+13 : install,kodi,like,man,play,resultstp,smart,tri,video,youtub

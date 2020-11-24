@@ -1,0 +1,3 @@
+claim_id,title,description,url,verdict_date,keywords,domain,verdict,category,sub_category
+c1,claim1 title,description1,url,2017-06-14 05:00:00,key,,false,,
+c2,claim2 title,description2,url,2017-06-14 05:00:00,key,,false,,

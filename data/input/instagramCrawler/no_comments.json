@@ -1,0 +1,33 @@
+{
+  "data": {
+    "user": {
+      "edge_follow": {
+        "count": 0,
+        "page_info": {
+          "has_next_page": false,
+          "end_cursor": null
+        },
+        "edges": []
+      },
+      "edge_followed_by": {
+        "count": 0,
+        "page_info": {
+          "has_next_page": false,
+          "end_cursor": null
+        },
+        "edges": []
+      }
+    },
+    "shortcode_media": {
+      "edge_media_to_comment": {
+        "count": 0,
+        "page_info": {
+          "has_next_page": false,
+          "end_cursor": null
+        },
+        "edges": []
+      }
+    }
+  },
+  "status": "ok"
+}

@@ -1,0 +1,4 @@
+newsapi.org:
+    mail: beckam.benny@plutofox.com
+    password: 1q2w#E$R
+    api_key: a4d67fc07cab4a26b07a4fa80dea7711

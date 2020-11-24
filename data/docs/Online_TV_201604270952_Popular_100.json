@@ -1,0 +1,846 @@
+[{
+	"created_at": "Tue Apr 26 11:46:28 +0000 2016",
+	"favorite_count": 111,
+	"favorited": false,
+	"hashtags": ["ANHQV"],
+	"id": 724927623697195008,
+	"lang": "es",
+	"media": [{
+		"display_url": "pic.twitter.com/uVUMKmgLnr",
+		"expanded_url": "http://twitter.com/FormulaTV/status/724927623697195008/photo/1",
+		"id": 724927622958960640,
+		"id_str": "724927622958960640",
+		"indices": [105,
+		128],
+		"media_url": "http://pbs.twimg.com/media/Cg911Q5WUAAIHm5.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg911Q5WUAAIHm5.jpg",
+		"sizes": {
+			"large": {
+				"h": 400,
+				"resize": "fit",
+				"w": 700
+			},
+			"medium": {
+				"h": 343,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 194,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/uVUMKmgLnr"
+	}],
+	"retweet_count": 178,
+	"retweeted": false,
+	"source": "<a href=\"http://www.noxvo.com\" rel=\"nofollow\">Noxvo</a>",
+	"text": "Una tienda online vende productos de 'PUF', la marca creada por Paloma en #ANHQV https://t.co/rvbejFVRtf https://t.co/uVUMKmgLnr",
+	"truncated": false,
+	"urls": {
+		"https://t.co/rvbejFVRtf": "http://frml.tv/55522"
+	},
+	"user": {
+		"created_at": "Tue Nov 25 23:03:52 +0000 2008",
+		"description": "El Twitter oficial de Formula TV, el portal l\u00edder de televisi\u00f3n en espa\u00f1ol. Todo sobre series y programas en nuestro Twitter.",
+		"favourites_count": 178,
+		"followers_count": 290191,
+		"friends_count": 797,
+		"id": 17634874,
+		"lang": "es",
+		"listed_count": 2508,
+		"name": "FormulaTV",
+		"profile_background_color": "1C70E8",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/7777065/1.gif",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/17634874/1448959853",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/378800000679940246/e7189319997f8b92eae98d92d20082fa_normal.jpeg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "FF850F",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "FormulaTV",
+		"statuses_count": 105661,
+		"time_zone": "Madrid",
+		"url": "http://t.co/UfWw0we4zu",
+		"utc_offset": 7200,
+		"verified": true
+	}
+},
+{
+	"created_at": "Tue Apr 26 17:21:55 +0000 2016",
+	"favorite_count": 49,
+	"favorited": false,
+	"id": 725012043582038020,
+	"lang": "es",
+	"media": [{
+		"display_url": "pic.twitter.com/UHlu0kv6V9",
+		"expanded_url": "http://twitter.com/infobae/status/725012043582038020/photo/1",
+		"id": 725011955296161794,
+		"id_str": "725011955296161794",
+		"indices": [98,
+		121],
+		"media_url": "http://pbs.twimg.com/media/Cg_CiDVW0AIj4Y3.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg_CiDVW0AIj4Y3.jpg",
+		"sizes": {
+			"large": {
+				"h": 433,
+				"resize": "fit",
+				"w": 770
+			},
+			"medium": {
+				"h": 337,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 191,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/UHlu0kv6V9"
+	}],
+	"retweet_count": 40,
+	"retweeted": false,
+	"source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+	"text": "Los argentinos consumen m\u00e1s video online que TV tradicional https://t.co/aQfg3irC6X por @nachopan https://t.co/UHlu0kv6V9",
+	"truncated": false,
+	"urls": {
+		"https://t.co/aQfg3irC6X": "http://infob.ae/1Sy1me5"
+	},
+	"user": {
+		"created_at": "Thu Aug 27 21:57:01 +0000 2009",
+		"description": "Todo el tiempo. Todas las noticias",
+		"favourites_count": 594,
+		"followers_count": 2015811,
+		"friends_count": 13504,
+		"geo_enabled": true,
+		"id": 69416519,
+		"lang": "es",
+		"listed_count": 7599,
+		"name": "infobae",
+		"profile_background_color": "131516",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/706394595/a79f272682509a6b7f9e57d3899cc56e.jpeg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/69416519/1449762407",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/654412211377545216/GJ1FKYpU_normal.png",
+		"profile_link_color": "F28209",
+		"profile_sidebar_fill_color": "EFEFEF",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "infobae",
+		"statuses_count": 221041,
+		"time_zone": "Buenos Aires",
+		"url": "http://t.co/pRTOVC3FwL",
+		"utc_offset": -10800,
+		"verified": true
+	},
+	"user_mentions": [{
+		"id": 7594662,
+		"name": "Ignacio Pan",
+		"screen_name": "nachopan"
+	}]
+},
+{
+	"created_at": "Tue Apr 26 09:12:56 +0000 2016",
+	"favorite_count": 285,
+	"favorited": false,
+	"id": 724888987161235456,
+	"in_reply_to_screen_name": "LFC",
+	"in_reply_to_status_id": 724882286320193537,
+	"in_reply_to_user_id": 19583545,
+	"lang": "en",
+	"retweet_count": 149,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "Updates and reaction from Warrington will be available to watch online throughout the day at https://t.co/oVh72PmqtQ",
+	"truncated": false,
+	"urls": {
+		"https://t.co/oVh72PmqtQ": "http://www.liverpoolfc.com/video/live/live-tv"
+	},
+	"user": {
+		"created_at": "Tue Jan 27 09:05:21 +0000 2009",
+		"description": "Official worldwide account of Liverpool FC, England's most successful club with 41 major honours #LFC",
+		"favourites_count": 4677,
+		"followers_count": 5705962,
+		"friends_count": 392389,
+		"geo_enabled": true,
+		"id": 19583545,
+		"lang": "en",
+		"listed_count": 19342,
+		"location": "Anfield, Liverpool",
+		"name": "Liverpool FC",
+		"profile_background_color": "FAF5F7",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/456471910855880704/-kI5sAT-.jpeg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/19583545/1461694118",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/644080670285950976/aZoRKjEI_normal.jpg",
+		"profile_link_color": "B40B43",
+		"profile_sidebar_fill_color": "FAFAFA",
+		"profile_text_color": "CC0000",
+		"protected": false,
+		"screen_name": "LFC",
+		"statuses_count": 51339,
+		"time_zone": "London",
+		"url": "https://t.co/yU9gDCR7IR",
+		"utc_offset": 3600,
+		"verified": true
+	}
+},
+{
+	"created_at": "Tue Apr 26 23:10:07 +0000 2016",
+	"favorite_count": 52,
+	"favorited": false,
+	"hashtags": ["BBLatin"],
+	"id": 725099667189542912,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/BTzYyfYs2N",
+		"expanded_url": "http://twitter.com/billboard/status/725099667189542912/photo/1",
+		"id": 725099666438762496,
+		"id_str": "725099666438762496",
+		"indices": [115,
+		138],
+		"media_url": "http://pbs.twimg.com/media/ChASTgzWMAA_b9i.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/ChASTgzWMAA_b9i.jpg",
+		"sizes": {
+			"large": {
+				"h": 421,
+				"resize": "fit",
+				"w": 636
+			},
+			"medium": {
+				"h": 397,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 225,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/BTzYyfYs2N"
+	}],
+	"retweet_count": 38,
+	"retweeted": false,
+	"source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+	"text": "#BBLatin Music Conference: Producers offer tips on how to land your music on film &amp; TV https://t.co/DKz9ZOsfAq https://t.co/BTzYyfYs2N",
+	"truncated": false,
+	"urls": {
+		"https://t.co/DKz9ZOsfAq": "http://blbrd.cm/HwQ1ed"
+	},
+	"user": {
+		"created_at": "Thu Oct 25 21:33:23 +0000 2007",
+		"description": "The world's most popular music charts, news, analysis, videos & more | @billboardbiz | @billboarddance | @billboardlatin | Tweets by @stefffles & @leslierichin",
+		"favourites_count": 5020,
+		"followers_count": 3785090,
+		"friends_count": 3027,
+		"geo_enabled": true,
+		"id": 9695312,
+		"lang": "en",
+		"listed_count": 16931,
+		"location": "Worldwide!",
+		"name": "billboard",
+		"profile_background_color": "FFFFFF",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/859213624/0a4c4debd18292678c5c55a64c9fd228.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/9695312/1461262268",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/448936044625293312/mokKeoul_normal.jpeg",
+		"profile_link_color": "1EB0E8",
+		"profile_sidebar_fill_color": "CCCCCC",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "billboard",
+		"statuses_count": 112578,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/3IA5YKU30t",
+		"utc_offset": -14400,
+		"verified": true
+	}
+},
+{
+	"created_at": "Mon Apr 25 09:55:58 +0000 2016",
+	"favorite_count": 79,
+	"favorited": false,
+	"id": 724537426614599680,
+	"lang": "en",
+	"retweet_count": 74,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+	"text": "'I could be so good for you' :) Cars from 80s TV series Minder fetch record-breaking auction - Mirror Online https://t.co/jPylPOOKQG",
+	"truncated": false,
+	"urls": {
+		"https://t.co/jPylPOOKQG": "https://apple.news/AJpHWc6fgQIyXnJ5k51ki3Q"
+	},
+	"user": {
+		"created_at": "Sun Jan 18 00:05:46 +0000 2009",
+		"description": "Techy speccy face",
+		"favourites_count": 3278,
+		"followers_count": 264937,
+		"friends_count": 48798,
+		"geo_enabled": true,
+		"id": 19129073,
+		"lang": "en",
+		"listed_count": 3209,
+		"location": "London, United Kingdom",
+		"name": "Jason Bradbury",
+		"profile_background_color": "00B3E3",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/537265552/background.jpg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/19129073/1445598417",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/654799118850588672/Eo-Jd3M8_normal.jpg",
+		"profile_link_color": "00B3E3",
+		"profile_sidebar_fill_color": "252429",
+		"profile_text_color": "666666",
+		"protected": false,
+		"screen_name": "JasonBradbury",
+		"statuses_count": 52366,
+		"time_zone": "London",
+		"url": "https://t.co/UNs7woFnza",
+		"utc_offset": 3600,
+		"verified": true
+	}
+},
+{
+	"created_at": "Mon Apr 25 22:06:34 +0000 2016",
+	"favorite_count": 96,
+	"favorited": false,
+	"hashtags": ["BEHAVE2016"],
+	"id": 724721287273156608,
+	"lang": "en",
+	"retweet_count": 51,
+	"retweeted": false,
+	"source": "<a href=\"http://snappytv.com\" rel=\"nofollow\">SnappyTV.com</a>",
+	"text": "Marketers must understand the science behind why people share their opinions online. @j1berger #BEHAVE2016 https://t.co/CPEmwvjyem",
+	"truncated": false,
+	"urls": {
+		"https://t.co/CPEmwvjyem": "http://snpy.tv/1qNtzGl"
+	},
+	"user": {
+		"created_at": "Tue Oct 21 16:08:36 +0000 2008",
+		"description": "http://t.co/t9frvJD5ee is the leader in event video production, video distribution, and monetization services. #onlinevideo #videoproduction #eventprofs",
+		"favourites_count": 1804,
+		"followers_count": 16532,
+		"friends_count": 822,
+		"geo_enabled": true,
+		"id": 16888374,
+		"lang": "en",
+		"listed_count": 1071,
+		"location": "San Francisco, CA",
+		"name": "FORA.tv",
+		"profile_background_color": "EEEEEE",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/5399278/twitter_forav2_new_bg.jpg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/16888374/1453328264",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/615998924738859008/jHloaG7a_normal.png",
+		"profile_link_color": "2676B1",
+		"profile_sidebar_fill_color": "FFFFFF",
+		"profile_text_color": "666666",
+		"protected": false,
+		"screen_name": "foratv",
+		"statuses_count": 16534,
+		"time_zone": "Pacific Time (US & Canada)",
+		"url": "http://t.co/xi8heRa0aM",
+		"utc_offset": -25200,
+		"verified": true
+	},
+	"user_mentions": [{
+		"id": 223666748,
+		"name": "jonah berger",
+		"screen_name": "j1berger"
+	}]
+},
+{
+	"created_at": "Tue Apr 26 05:20:05 +0000 2016",
+	"favorite_count": 23,
+	"favorited": false,
+	"id": 724830387424378882,
+	"lang": "en",
+	"retweet_count": 35,
+	"retweeted": false,
+	"source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+	"text": "The Guardian, Nigeria\u2019s most trusted newspaper, launches its online TV platform, Guardian TV, today\nhttps://t.co/3Smge2Y7Iw",
+	"truncated": false,
+	"urls": {
+		"https://t.co/3Smge2Y7Iw": "http://guardian.ng/features/the-guardian-launches-online-tv-platform/"
+	},
+	"user": {
+		"created_at": "Thu Jul 16 12:24:36 +0000 2009",
+		"description": "An independent newspaper, established in 1983 for the purpose of presenting balanced coverage of events, and of promoting the best interests of Nigeria.",
+		"favourites_count": 10,
+		"followers_count": 650757,
+		"friends_count": 96,
+		"id": 57320024,
+		"lang": "en",
+		"listed_count": 1188,
+		"location": "Nigeria",
+		"name": "The Guardian Nigeria",
+		"profile_background_color": "022330",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/57320024/1461643892",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/666894667011760128/AKPrU6gf_normal.png",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "C0DFEC",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "GuardianNigeria",
+		"statuses_count": 78665,
+		"time_zone": "West Central Africa",
+		"url": "https://t.co/a5sA2YOmvC",
+		"utc_offset": 3600,
+		"verified": true
+	}
+},
+{
+	"created_at": "Mon Apr 25 22:40:14 +0000 2016",
+	"favorite_count": 11,
+	"favorited": false,
+	"id": 724729761759662081,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/1SFuf7ZnkZ",
+		"expanded_url": "http://twitter.com/ValaAfshar/status/724729761759662081/photo/1",
+		"id": 724729755141083137,
+		"id_str": "724729755141083137",
+		"indices": [104,
+		127],
+		"media_url": "http://pbs.twimg.com/media/Cg7B311XEAEwiEj.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg7B311XEAEwiEj.jpg",
+		"sizes": {
+			"large": {
+				"h": 951,
+				"resize": "fit",
+				"w": 1024
+			},
+			"medium": {
+				"h": 557,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 316,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/1SFuf7ZnkZ"
+	}],
+	"retweet_count": 24,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+	"text": "For the first time ever in 2015, online media consumption was bigger than TV consumption \u2014@TheEconomist https://t.co/1SFuf7ZnkZ",
+	"truncated": false,
+	"user": {
+		"created_at": "Wed Mar 02 13:31:29 +0000 2011",
+		"description": "Chief Digital Evangelist, @Salesforce     | Blog: @HuffingtonPost | Book: https://t.co/oSpLljigAi | Show: @DisrupTVShow",
+		"followers_count": 118023,
+		"friends_count": 480,
+		"geo_enabled": true,
+		"id": 259725229,
+		"lang": "en",
+		"listed_count": 6726,
+		"location": "Boston",
+		"name": "Vala Afshar",
+		"profile_background_color": "C0DEED",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/259725229/1439209336",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/1259558245/vala_300dpi_normal.jpg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "ValaAfshar",
+		"statuses_count": 267552,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/nSnWIXeE3A",
+		"utc_offset": -14400,
+		"verified": true
+	},
+	"user_mentions": [{
+		"id": 5988062,
+		"name": "The Economist",
+		"screen_name": "TheEconomist"
+	}]
+},
+{
+	"created_at": "Tue Apr 26 15:47:00 +0000 2016",
+	"favorite_count": 24,
+	"favorited": false,
+	"hashtags": ["ANHQV"],
+	"id": 724988155926032388,
+	"lang": "es",
+	"media": [{
+		"display_url": "pic.twitter.com/ad1XvNjvAc",
+		"expanded_url": "http://twitter.com/FormulaTV/status/724988155926032388/photo/1",
+		"id": 724988155661815808,
+		"id_str": "724988155661815808",
+		"indices": [109,
+		132],
+		"media_url": "http://pbs.twimg.com/media/Cg-s4uyWkAAzxfl.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg-s4uyWkAAzxfl.jpg",
+		"sizes": {
+			"large": {
+				"h": 400,
+				"resize": "fit",
+				"w": 700
+			},
+			"medium": {
+				"h": 343,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 194,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/ad1XvNjvAc"
+	}],
+	"retweet_count": 33,
+	"retweeted": false,
+	"source": "<a href=\"http://www.noxvo.com\" rel=\"nofollow\">Noxvo</a>",
+	"text": "Una tienda online revive 'Paloma Urban Fashion', la famosa marca de Paloma en #ANHQV https://t.co/rvbejFVRtf https://t.co/ad1XvNjvAc",
+	"truncated": false,
+	"urls": {
+		"https://t.co/rvbejFVRtf": "http://frml.tv/55522"
+	},
+	"user": {
+		"created_at": "Tue Nov 25 23:03:52 +0000 2008",
+		"description": "El Twitter oficial de Formula TV, el portal l\u00edder de televisi\u00f3n en espa\u00f1ol. Todo sobre series y programas en nuestro Twitter.",
+		"favourites_count": 178,
+		"followers_count": 290191,
+		"friends_count": 797,
+		"id": 17634874,
+		"lang": "es",
+		"listed_count": 2508,
+		"name": "FormulaTV",
+		"profile_background_color": "1C70E8",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/7777065/1.gif",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/17634874/1448959853",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/378800000679940246/e7189319997f8b92eae98d92d20082fa_normal.jpeg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "FF850F",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "FormulaTV",
+		"statuses_count": 105661,
+		"time_zone": "Madrid",
+		"url": "http://t.co/UfWw0we4zu",
+		"utc_offset": 7200,
+		"verified": true
+	}
+},
+{
+	"created_at": "Tue Apr 26 02:57:10 +0000 2016",
+	"favorite_count": 15,
+	"favorited": false,
+	"hashtags": ["Lebanon",
+	"Beirut"],
+	"id": 724794419212374017,
+	"in_reply_to_screen_name": "zaidbenjamin",
+	"in_reply_to_status_id": 724791355050852356,
+	"in_reply_to_user_id": 48956231,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/8848XXdMvP",
+		"expanded_url": "http://twitter.com/zaidbenjamin/status/724794419212374017/photo/1",
+		"id": 724794338048241664,
+		"id_str": "724794338048241664",
+		"indices": [108,
+		131],
+		"media_url": "http://pbs.twimg.com/media/Cg78nD6UcAA_AxU.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg78nD6UcAA_AxU.jpg",
+		"sizes": {
+			"large": {
+				"h": 387,
+				"resize": "fit",
+				"w": 620
+			},
+			"medium": {
+				"h": 375,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 212,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/8848XXdMvP"
+	}],
+	"retweet_count": 18,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "#Lebanon | \"The pen-seller of #Beirut\" says part of money raised for him online has been stolen - Jadeed TV https://t.co/8848XXdMvP",
+	"truncated": false,
+	"user": {
+		"created_at": "Sat Jun 20 07:50:44 +0000 2009",
+		"description": "Radio Sawa Washington Correspondent . News & Views Are My Own. Retweets Not Endorsement. \u0632\u064a\u062f \u0628\u0646\u064a\u0627\u0645\u064a\u0646",
+		"favourites_count": 821,
+		"followers_count": 136047,
+		"friends_count": 4383,
+		"id": 48956231,
+		"lang": "en",
+		"listed_count": 1886,
+		"location": "Washington DC",
+		"name": "Zaid Benjamin",
+		"profile_background_color": "778899",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/739641205/8d5ee5fe42c5ceeeeefcee9c135e82c7.png",
+		"profile_background_tile": true,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/48956231/1459619417",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/643925624365559809/K3_pnlJS_normal.jpg",
+		"profile_link_color": "5188C2",
+		"profile_sidebar_fill_color": "1C1B1A",
+		"profile_text_color": "FCF4FC",
+		"protected": false,
+		"screen_name": "zaidbenjamin",
+		"statuses_count": 86656,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/rM6KMp7n9f",
+		"utc_offset": -14400,
+		"verified": true
+	}
+},
+{
+	"created_at": "Mon Apr 25 23:33:27 +0000 2016",
+	"favorite_count": 90,
+	"favorited": false,
+	"id": 724743151802560514,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/ZjNYQHfdAI",
+		"expanded_url": "http://twitter.com/rocksound/status/724743151802560514/photo/1",
+		"id": 724743141320998912,
+		"id_str": "724743141320998912",
+		"indices": [39,
+		62],
+		"media_url": "http://pbs.twimg.com/media/Cg7ODBPWwAAIL8w.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg7ODBPWwAAIL8w.jpg",
+		"sizes": {
+			"large": {
+				"h": 888,
+				"resize": "fit",
+				"w": 888
+			},
+			"medium": {
+				"h": 600,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 340,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/ZjNYQHfdAI"
+	}],
+	"retweet_count": 21,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+	"text": "Read online at https://t.co/Z4Bhc4wEMn https://t.co/ZjNYQHfdAI",
+	"truncated": false,
+	"urls": {
+		"https://t.co/Z4Bhc4wEMn": "http://smarturl.it/rs213"
+	},
+	"user": {
+		"created_at": "Sun Apr 20 13:31:46 +0000 2008",
+		"description": "Issue 213 is available now!  Download the digital edition or order a copy from https://t.co/1WsJcd0ov5",
+		"favourites_count": 5222,
+		"followers_count": 300387,
+		"friends_count": 807,
+		"geo_enabled": true,
+		"id": 14451605,
+		"lang": "en",
+		"listed_count": 2266,
+		"location": "Everywhere",
+		"name": "Rock Sound",
+		"profile_background_color": "ABB8C2",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/714809386695278592/m1O2udnv.jpg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/14451605/1461603504",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/724643663414996992/IzgY4td6_normal.jpg",
+		"profile_link_color": "B3AAAA",
+		"profile_sidebar_fill_color": "DDDDDD",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "rocksound",
+		"statuses_count": 46614,
+		"time_zone": "London",
+		"url": "http://t.co/CK2pPIWfmy",
+		"utc_offset": 3600,
+		"verified": true
+	}
+},
+{
+	"created_at": "Mon Apr 25 19:10:38 +0000 2016",
+	"favorite_count": 12,
+	"favorited": false,
+	"id": 724677015320825856,
+	"lang": "en",
+	"retweet_count": 15,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "Saturday Night Live to run branded sketches to cut ad breaks by 30% https://t.co/9xh0qE5N4J via @MailOnline",
+	"truncated": false,
+	"urls": {
+		"https://t.co/9xh0qE5N4J": "http://dailym.ai/1SnBS6t"
+	},
+	"user": {
+		"created_at": "Wed Sep 22 15:41:33 +0000 2010",
+		"description": "@DailyMail reporter. Opinions mine. Email: mia.degraaf@dailymail.com",
+		"favourites_count": 693,
+		"followers_count": 1204,
+		"friends_count": 2192,
+		"geo_enabled": true,
+		"id": 193740606,
+		"lang": "en",
+		"listed_count": 30,
+		"location": "New York ",
+		"name": "Mia de Graaf",
+		"profile_background_color": "131516",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+		"profile_background_tile": true,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/193740606/1442975823",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/434781415323226113/9ADFhlAF_normal.jpeg",
+		"profile_link_color": "05D2ED",
+		"profile_sidebar_fill_color": "EFEFEF",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "miadegraaf",
+		"statuses_count": 2717,
+		"time_zone": "Eastern Time (US & Canada)",
+		"utc_offset": -14400,
+		"verified": true
+	},
+	"user_mentions": [{
+		"id": 15438913,
+		"name": "Daily Mail Online",
+		"screen_name": "MailOnline"
+	}]
+},
+{
+	"created_at": "Tue Apr 26 18:54:14 +0000 2016",
+	"favorite_count": 6,
+	"favorited": false,
+	"hashtags": ["FORRMktg"],
+	"id": 725035274699476992,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/31Efemm2WP",
+		"expanded_url": "http://twitter.com/ValaAfshar/status/725035274699476992/photo/1",
+		"id": 725035268479324160,
+		"id_str": "725035268479324160",
+		"indices": [89,
+		112],
+		"media_url": "http://pbs.twimg.com/media/Cg_XvDtXEAAYkk2.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg_XvDtXEAAYkk2.jpg",
+		"sizes": {
+			"large": {
+				"h": 952,
+				"resize": "fit",
+				"w": 1024
+			},
+			"medium": {
+				"h": 558,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 316,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/31Efemm2WP"
+	}],
+	"retweet_count": 14,
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+	"text": "The amount of time people spend consuming media online is now greater than TV. #FORRMktg https://t.co/31Efemm2WP",
+	"truncated": false,
+	"user": {
+		"created_at": "Wed Mar 02 13:31:29 +0000 2011",
+		"description": "Chief Digital Evangelist, @Salesforce     | Blog: @HuffingtonPost | Book: https://t.co/oSpLljigAi | Show: @DisrupTVShow",
+		"followers_count": 118023,
+		"friends_count": 480,
+		"geo_enabled": true,
+		"id": 259725229,
+		"lang": "en",
+		"listed_count": 6726,
+		"location": "Boston",
+		"name": "Vala Afshar",
+		"profile_background_color": "C0DEED",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/259725229/1439209336",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/1259558245/vala_300dpi_normal.jpg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "ValaAfshar",
+		"statuses_count": 267552,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/nSnWIXeE3A",
+		"utc_offset": -14400,
+		"verified": true
+	}
+}
+]

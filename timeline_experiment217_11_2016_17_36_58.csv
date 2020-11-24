@@ -1,0 +1,20 @@
+Iteration, Total Good, Total Bad, Erased Good, Erased Bad, Number of labeled instances, TP, TN, FP, FN, Correctly Classified, Incorrectly Classified, Accuracy 
+0,310,299,113,187,300,83,93,20,33,176,53,0.768558951965 
+1,310,299,123,177,300,84,101,22,30,185,52,0.7805907173 
+2,310,299,126,174,300,92,103,23,29,195,52,0.789473684211 
+3,310,299,114,186,300,93,93,21,26,186,47,0.798283261803 
+4,310,299,114,186,300,93,95,19,25,188,44,0.810344827586 
+5,310,299,106,194,300,100,90,16,28,190,44,0.811965811966 
+6,310,299,129,171,300,89,110,19,28,199,47,0.808943089431 
+7,310,299,128,172,300,100,105,23,23,205,46,0.816733067729 
+8,310,299,113,187,300,90,94,19,30,184,49,0.789699570815 
+9,310,299,123,177,300,79,105,18,29,184,47,0.796536796537 
+Overall, , , , ,3000,903,989,200,281,1892,481,0.797302991993 
+
+True Positive: Bad actor identified as bad 
+True Negative: Good actor identified as good 
+False Positive: Good actor identified as bad 
+False Negative: Bad actor identified as good 
+Correctly classified instances: TP+TN 
+Incorrectly classified instances: FP+FN  
+Accuracy: (TP+TN)/(TP+TN+FP+FN)  

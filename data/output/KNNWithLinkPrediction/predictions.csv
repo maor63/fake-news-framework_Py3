@@ -1,0 +1,2 @@
+Targeted_class,Similarity_function,K,Decision_model,Correctly_classified,Incorrectly_classified,Total,AUC,Accuracy,Precision,Recall
+author_type,cocitation,8,majority_voting,2,0,2,1.0,1.0,1.0,1.0

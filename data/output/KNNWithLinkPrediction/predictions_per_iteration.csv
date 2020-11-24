@@ -1,0 +1,3 @@
+iteration,graph_name,user_guid,decision_model,confidence_level,prediction,actual,neighbors
+0,cocitation,g_1,majority_voting,1.0,bad_actor,bad_actor,"[('g_2', 2.0, 1), ('g_3', 1.3, 1), ('g_4', 1.0, 1)]"
+0,cocitation,g_5,majority_voting,0.25,good_actor,good_actor,"[('g_4', 2.0, 1), ('g_6', 1.8, 0), ('g_8', 1.7, 0), ('g_7', 1.5, 0)]"

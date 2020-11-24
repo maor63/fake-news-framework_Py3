@@ -1,0 +1,879 @@
+[{
+	"created_at": "Tue Apr 26 05:12:49 +0000 2016",
+	"favorite_count": 49,
+	"favorited": false,
+	"id": 724828556866539521,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/lWsdvXgujT",
+		"expanded_url": "http://twitter.com/engadget/status/724828556866539521/photo/1",
+		"id": 724828556157718528,
+		"id_str": "724828556157718528",
+		"indices": [87,
+			110
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg8bu0TXEAA44Ip.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg8bu0TXEAA44Ip.jpg",
+		"sizes": {
+			"large": {
+				"h": 538,
+				"resize": "fit",
+				"w": 1024
+			},
+			"medium": {
+				"h": 315,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 179,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/lWsdvXgujT"
+	}],
+	"retweet_count": 55,
+	"retweeted": false,
+	"source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+	"text": "Logitech's Harmony app brings smart home control to Android TV https://t.co/MzYu9O3h8L https://t.co/lWsdvXgujT",
+	"truncated": false,
+	"urls": {
+		"https://t.co/MzYu9O3h8L": "http://engt.co/1TauO9z"
+	},
+	"user": {
+		"created_at": "Sun Apr 13 02:42:50 +0000 2008",
+		"description": "The definitive guide to this connected life. Follow us on Instagram: https://t.co/ny6jmBa8PM // Send us snaps: https://t.co/1zEYYH5cnv",
+		"favourites_count": 1230,
+		"followers_count": 1731162,
+		"friends_count": 262,
+		"geo_enabled": true,
+		"id": 14372486,
+		"lang": "en",
+		"listed_count": 49519,
+		"location": "Global",
+		"name": "Engadget",
+		"profile_background_color": "000000",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/436918710771519488/NWFDS8Aq.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/14372486/1455828924",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/655059892022022144/Pq3Q_1oU_normal.png",
+		"profile_link_color": "3B94D9",
+		"profile_sidebar_fill_color": "FFFFFF",
+		"profile_text_color": "373737",
+		"protected": false,
+		"screen_name": "engadget",
+		"statuses_count": 119997,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/sPqsSwBKtx",
+		"utc_offset": -14400,
+		"verified": true
+	}
+}, {
+	"created_at": "Mon Apr 25 00:15:54 +0000 2016",
+	"favorite_count": 168,
+	"favorited": false,
+	"hashtags": ["NBARapidReplay",
+		"HAWKSvCELTICS"
+	],
+	"id": 724391450226491392,
+	"lang": "en",
+	"retweet_count": 64,
+	"retweeted": false,
+	"source": "<a href=\"http://snappytv.com\" rel=\"nofollow\">SnappyTV.com</a>",
+	"text": "Smart goes baseline for the flush on @NBAonTNT! #NBARapidReplay #HAWKSvCELTICS https://t.co/rEwvH6u95j",
+	"truncated": false,
+	"urls": {
+		"https://t.co/rEwvH6u95j": "http://snpy.tv/1raWbKa"
+	},
+	"user": {
+		"created_at": "Mon Feb 02 19:04:42 +0000 2009",
+		"description": "30 teams, 1 dream. #ThisIsWhyWePlay",
+		"favourites_count": 84,
+		"followers_count": 21295194,
+		"friends_count": 1468,
+		"geo_enabled": true,
+		"id": 19923144,
+		"lang": "en",
+		"listed_count": 43826,
+		"name": "NBA",
+		"profile_background_color": "003969",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/651942155276054528/Ry82B6Mn.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/19923144/1455718882",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/664807873713725440/r8ZAg5lD_normal.jpg",
+		"profile_link_color": "3B94D9",
+		"profile_sidebar_fill_color": "FFFFFF",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "NBA",
+		"statuses_count": 133548,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "http://t.co/krBlSiTgZD",
+		"utc_offset": -14400,
+		"verified": true
+	},
+	"user_mentions": [{
+		"id": 22178780,
+		"name": "NBA on TNT",
+		"screen_name": "NBAonTNT"
+	}]
+}, {
+	"created_at": "Mon Apr 25 18:20:39 +0000 2016",
+	"favorite_count": 23,
+	"favorited": false,
+	"hashtags": ["AmazonGiveaway",
+		"amazonstudent"
+	],
+	"id": 724664434996711425,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/vEQJzUaQVI",
+		"expanded_url": "http://twitter.com/AmazonStudent/status/724664434996711425/photo/1",
+		"id": 724664434333986816,
+		"id_str": "724664434333986816",
+		"indices": [113,
+			136
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg6Gdq3WMAAaX3k.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg6Gdq3WMAAaX3k.jpg",
+		"sizes": {
+			"large": {
+				"h": 512,
+				"resize": "fit",
+				"w": 1024
+			},
+			"medium": {
+				"h": 300,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 170,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/vEQJzUaQVI"
+	}],
+	"retweet_count": 23,
+	"retweeted": false,
+	"source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+	"text": "Enter this #AmazonGiveaway for a chance to win a Smart LED TV: https://t.co/rNy3Mx70Dm NoPurchNec #amazonstudent https://t.co/vEQJzUaQVI",
+	"truncated": false,
+	"urls": {
+		"https://t.co/rNy3Mx70Dm": "http://amzn.to/1VUbzHs"
+	},
+	"user": {
+		"created_at": "Wed Jul 14 20:28:48 +0000 2010",
+		"description": "The Official Amazon Student Twitter Feed",
+		"favourites_count": 302,
+		"followers_count": 157275,
+		"friends_count": 98,
+		"id": 166707531,
+		"lang": "en",
+		"listed_count": 271,
+		"location": "Amazon HQ, Seattle, WA",
+		"name": "Amazon Student",
+		"profile_background_color": "022330",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/166707531/1449093528",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/664869981952208896/tgkWb-8Q_normal.jpg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "C0DFEC",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "AmazonStudent",
+		"statuses_count": 1495,
+		"time_zone": "Pacific Time (US & Canada)",
+		"url": "http://t.co/0dy8DyTCmZ",
+		"utc_offset": -25200,
+		"verified": true
+	}
+}, {
+	"created_at": "Tue Apr 26 12:10:44 +0000 2016",
+	"favorited": false,
+	"id": 724933728330469376,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/0sZ99xyNdo",
+		"expanded_url": "http://twitter.com/bidgreatreview/status/724933728330469376/photo/1",
+		"id": 724933728015908867,
+		"id_str": "724933728015908867",
+		"indices": [89,
+			112
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg97YoAWgAMm3Ru.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg97YoAWgAMm3Ru.jpg",
+		"sizes": {
+			"large": {
+				"h": 500,
+				"resize": "fit",
+				"w": 375
+			},
+			"medium": {
+				"h": 500,
+				"resize": "fit",
+				"w": 375
+			},
+			"small": {
+				"h": 453,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/0sZ99xyNdo"
+	}],
+	"retweeted": false,
+	"source": "<a href=\"http://ifttt.com\" rel=\"nofollow\">IFTTT</a>",
+	"text": "Samsung RMCTPF2BP1 AA59-00772A Smart HUB Touch TV Remote Control https://t.co/yR6IvRwbpf https://t.co/0sZ99xyNdo",
+	"truncated": false,
+	"urls": {
+		"https://t.co/yR6IvRwbpf": "http://health-beauty-items.info/hlthb/tytms029/?query=http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&toolid=10039&campid=5337797091&item=162050709455&vectorid=229466&lgeo=1"
+	},
+	"user": {
+		"created_at": "Fri Jan 08 03:57:16 +0000 2016",
+		"default_profile": true,
+		"followers_count": 84,
+		"friends_count": 36,
+		"id": 4740931156,
+		"lang": "es",
+		"listed_count": 38,
+		"name": "bid great review",
+		"profile_background_color": "F5F8FA",
+		"profile_background_tile": false,
+		"profile_image_url": "https://pbs.twimg.com/profile_images/685309729569173504/5yAKJUzS_normal.jpg",
+		"profile_link_color": "2B7BB9",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "bidgreatreview",
+		"statuses_count": 23363
+	}
+}, {
+	"created_at": "Tue Apr 26 12:10:12 +0000 2016",
+	"favorited": false,
+	"id": 724933596897775617,
+	"lang": "in",
+	"media": [{
+		"display_url": "pic.twitter.com/4dDOhMIEyF",
+		"expanded_url": "http://twitter.com/electronic__US/status/724933596897775617/photo/1",
+		"id": 724933596667109376,
+		"id_str": "724933596667109376",
+		"indices": [90,
+			113
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg97Q-sW4AAwPpK.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg97Q-sW4AAwPpK.jpg",
+		"sizes": {
+			"large": {
+				"h": 500,
+				"resize": "fit",
+				"w": 500
+			},
+			"medium": {
+				"h": 500,
+				"resize": "fit",
+				"w": 500
+			},
+			"small": {
+				"h": 340,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/4dDOhMIEyF"
+	}],
+	"retweeted": false,
+	"source": "<a href=\"http://www.nextscripts.com\" rel=\"nofollow\">Electronic__US</a>",
+	"text": "LG Electronics 49LH5700 49-Inch 1080p Smart LED TV (2016 Model) - https://t.co/9OslE0c4FK https://t.co/4dDOhMIEyF",
+	"truncated": false,
+	"urls": {
+		"https://t.co/9OslE0c4FK": "http://electroniccity.us/lg-electronics-49lh5700-49-inch-1080p-smart-led-tv-2016-model/.html"
+	},
+	"user": {
+		"created_at": "Thu Jul 04 07:51:25 +0000 2013",
+		"description": "For your solution Electronic Store and Information",
+		"followers_count": 162,
+		"friends_count": 1026,
+		"id": 1567597728,
+		"lang": "en",
+		"listed_count": 2,
+		"location": "United States",
+		"name": "electroniccity.us",
+		"profile_background_color": "C0DEED",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000015513113/90b8d46ef5de9c3fae4c8ee425f2833c.jpeg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/1567597728/1459746800",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/716856226299006976/HGncHSM-_normal.jpg",
+		"profile_link_color": "19CF86",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "electronic__US",
+		"statuses_count": 1158,
+		"time_zone": "Pacific Time (US & Canada)",
+		"url": "https://t.co/9dt8wHTLX4",
+		"utc_offset": -25200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:09:47 +0000 2016",
+	"favorited": false,
+	"hashtags": ["Girona",
+		"lleida"
+	],
+	"id": 724933491444617220,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/rPvUIV7nxO",
+		"expanded_url": "http://twitter.com/elopeztrill/status/724933491444617220/photo/1",
+		"id": 724933489083179010,
+		"id_str": "724933489083179010",
+		"indices": [117,
+			140
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg97Kt6WYAICY_A.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg97Kt6WYAICY_A.jpg",
+		"sizes": {
+			"large": {
+				"h": 560,
+				"resize": "fit",
+				"w": 560
+			},
+			"medium": {
+				"h": 560,
+				"resize": "fit",
+				"w": 560
+			},
+			"small": {
+				"h": 340,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/rPvUIV7nxO"
+	}],
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "#Girona #lleida Solo 2!!: 864,90 Eur Telefunken 55\" Curva, 4K, Smart, Wifi, 3D, envio gratis https://t.co/Qy1fnrSDcw https://t.co/rPvUIV7nxO",
+	"truncated": false,
+	"urls": {
+		"https://t.co/Qy1fnrSDcw": "http://www.stockcolectivos.com/tienda-tv-television/"
+	},
+	"user": {
+		"created_at": "Tue Feb 23 12:32:09 +0000 2016",
+		"description": "Venta de Tv -Electrodom\u00e9sticos - B2B para Colectivos y Particulares",
+		"favourites_count": 90,
+		"followers_count": 51,
+		"friends_count": 227,
+		"id": 702108683346583552,
+		"lang": "es",
+		"listed_count": 1,
+		"location": "Madrid, Comunidad de Madrid",
+		"name": "Stockcolectivos",
+		"profile_background_color": "000000",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/719943691444613125/980y5oHz.jpg",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/702108683346583552/1456398195",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/702112262174220294/c4C6fVtY_normal.jpg",
+		"profile_link_color": "1B95E0",
+		"profile_sidebar_fill_color": "000000",
+		"profile_text_color": "000000",
+		"protected": false,
+		"screen_name": "elopeztrill",
+		"statuses_count": 86,
+		"time_zone": "Pacific Time (US & Canada)",
+		"url": "https://t.co/Gl3UND9vkv",
+		"utc_offset": -25200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:09:40 +0000 2016",
+	"favorited": false,
+	"id": 724933463128825863,
+	"lang": "nl",
+	"retweeted": false,
+	"source": "<a href=\"http://twitterfeed.com\" rel=\"nofollow\">twitterfeed</a>",
+	"text": "Hete Aanbieding: 137\u00b0 - Samsung UE48JU6445 4K Ultra HD Smart TV (Benelux model) \u20ac699 @ Redcoon https://t.co/mKH2qwpaxx",
+	"truncated": false,
+	"urls": {
+		"https://t.co/mKH2qwpaxx": "http://bit.ly/233drNq"
+	},
+	"user": {
+		"created_at": "Fri Jun 27 12:39:03 +0000 2014",
+		"default_profile": true,
+		"description": "Vind de heetste deals op http://t.co/gWLQbTuxs9!  | Facebook: http://t.co/J2TxoMjlZY  |  Android App: http://t.co/3purXWhepc  |  iOS App: http://t.co/6Qih3qrnIZ",
+		"favourites_count": 57,
+		"followers_count": 1703,
+		"friends_count": 74,
+		"id": 2591290128,
+		"lang": "en",
+		"listed_count": 6,
+		"name": "Pepper .com",
+		"profile_background_color": "C0DEED",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/2591290128/1454432520",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/694565870157336577/EH5bqS9t_normal.png",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "PepperNederland",
+		"statuses_count": 2982,
+		"time_zone": "Amsterdam",
+		"utc_offset": 7200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:08:47 +0000 2016",
+	"favorited": false,
+	"hashtags": ["sweeps"],
+	"id": 724933239656337409,
+	"lang": "en",
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "I want to win a @RokuPlayer Smart TV so I can watch @CarbonTV all day! See what you're made of &amp; enter this #sweeps https://t.co/rQad3J9NxG",
+	"truncated": false,
+	"urls": {
+		"https://t.co/rQad3J9NxG": "http://bit.ly/CarbonTVSweeps"
+	},
+	"user": {
+		"created_at": "Thu Mar 05 02:56:59 +0000 2009",
+		"description": "Proud Scout mom! I \u2764\ufe0fmy family, The Carolina Panthers, Nascar, photography, cooking, sports, Auburn and technology!",
+		"favourites_count": 4212,
+		"followers_count": 6027,
+		"friends_count": 6476,
+		"id": 22869662,
+		"lang": "en",
+		"listed_count": 525,
+		"location": "Race City, North Carolina",
+		"name": "Susan",
+		"profile_background_color": "9955FF",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/691112545/b5d6bc468c7340ef9a22fcadc6fe67d7.jpeg",
+		"profile_background_tile": true,
+		"profile_image_url": "https://pbs.twimg.com/profile_images/715118345515827200/OccqmbOX_normal.jpg",
+		"profile_link_color": "9955FF",
+		"profile_sidebar_fill_color": "CCBBEE",
+		"profile_text_color": "660099",
+		"protected": false,
+		"screen_name": "grumpy1970",
+		"statuses_count": 387680,
+		"time_zone": "Eastern Time (US & Canada)",
+		"utc_offset": -14400
+	},
+	"user_mentions": [{
+		"id": 20282100,
+		"name": "Roku",
+		"screen_name": "RokuPlayer"
+	}, {
+		"id": 1641131924,
+		"name": "CarbonTV",
+		"screen_name": "CarbonTV"
+	}]
+}, {
+	"created_at": "Tue Apr 26 12:08:42 +0000 2016",
+	"favorited": false,
+	"id": 724933219943104513,
+	"lang": "en",
+	"retweeted": false,
+	"source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+	"text": "TV tech terms demystified, part four: LED backlighting - Somewhere along the line, thin and light supplanted pi... https://t.co/s9XfavolHe",
+	"truncated": false,
+	"urls": {
+		"https://t.co/s9XfavolHe": "http://ow.ly/8JNvCC"
+	},
+	"user": {
+		"created_at": "Sun Jul 08 11:41:27 +0000 2012",
+		"description": "Social Media AOK is a service provider across all social media platforms. Today's consumers demand more, we make social media work for you.",
+		"favourites_count": 5024,
+		"followers_count": 1885,
+		"friends_count": 965,
+		"geo_enabled": true,
+		"id": 630150253,
+		"lang": "en",
+		"listed_count": 222,
+		"location": "Australia",
+		"name": "Social Media AOK",
+		"profile_background_color": "0E1517",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/683893550287699968/FOb2F_yt.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/630150253/1451887976",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/458819950535122944/PmZm4tA7_normal.png",
+		"profile_link_color": "1E2A96",
+		"profile_sidebar_fill_color": "FFAF31",
+		"profile_text_color": "F2FF56",
+		"protected": false,
+		"screen_name": "SocialMediaAOK",
+		"statuses_count": 26680,
+		"time_zone": "Adelaide",
+		"url": "http://t.co/KvApqyzJBU",
+		"utc_offset": 34200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:08:41 +0000 2016",
+	"favorited": false,
+	"hashtags": ["Referral",
+		"news",
+		"WINNER",
+		"loveourpatients"
+	],
+	"id": 724933212649218049,
+	"lang": "en",
+	"media": [{
+		"display_url": "pic.twitter.com/fgwZpSKr8b",
+		"expanded_url": "http://twitter.com/4aperfectsmile/status/724933212649218049/photo/1",
+		"id": 724933210614943744,
+		"id_str": "724933210614943744",
+		"indices": [95,
+			118
+		],
+		"media_url": "http://pbs.twimg.com/media/Cg966giWUAAFRb4.jpg",
+		"media_url_https": "https://pbs.twimg.com/media/Cg966giWUAAFRb4.jpg",
+		"sizes": {
+			"large": {
+				"h": 663,
+				"resize": "fit",
+				"w": 1024
+			},
+			"medium": {
+				"h": 389,
+				"resize": "fit",
+				"w": 600
+			},
+			"small": {
+				"h": 220,
+				"resize": "fit",
+				"w": 340
+			},
+			"thumb": {
+				"h": 150,
+				"resize": "crop",
+				"w": 150
+			}
+		},
+		"type": "photo",
+		"url": "https://t.co/fgwZpSKr8b"
+	}],
+	"place": {
+		"attributes": {
+
+		},
+		"bounding_box": {
+			"coordinates": [
+				[
+					[-78.528507,
+						38.009553
+					],
+					[-78.446389,
+						38.009553
+					],
+					[-78.446389,
+						38.07052
+					],
+					[-78.528507,
+						38.07052
+					]
+				]
+			],
+			"type": "Polygon"
+		},
+		"contained_within": [],
+		"country": "United States",
+		"country_code": "US",
+		"full_name": "Charlottesville, VA",
+		"id": "531a6942bb8056b9",
+		"name": "Charlottesville",
+		"place_type": "city",
+		"url": "https://api.twitter.com/1.1/geo/id/531a6942bb8056b9.json"
+	},
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "Refer a friend for a chance to win a 40\" LED/SMART TV #Referral #news #WINNER #loveourpatients https://t.co/fgwZpSKr8b",
+	"truncated": false,
+	"user": {
+		"created_at": "Wed Jan 27 19:22:35 +0000 2016",
+		"description": "Call us today: 434-293-8944! Our office is conveniently located in the Old Ivy area on the west end of Charlottesville  and the outskirts of the UVA campus.",
+		"followers_count": 5,
+		"friends_count": 35,
+		"geo_enabled": true,
+		"id": 4854578177,
+		"lang": "en",
+		"location": "Charlottesville, VA",
+		"name": "Albemarle Dental",
+		"profile_background_color": "000000",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme3/bg.gif",
+		"profile_background_tile": false,
+		"profile_image_url": "https://pbs.twimg.com/profile_images/692430871954063362/1kzSSKm3_normal.jpg",
+		"profile_link_color": "FF691F",
+		"profile_sidebar_fill_color": "000000",
+		"profile_text_color": "000000",
+		"protected": false,
+		"screen_name": "4aperfectsmile",
+		"statuses_count": 15,
+		"time_zone": "Eastern Time (US & Canada)",
+		"url": "https://t.co/BjDlItLn9H",
+		"utc_offset": -14400
+	}
+}, {
+	"created_at": "Tue Apr 26 12:08:02 +0000 2016",
+	"favorited": false,
+	"id": 724933051617271809,
+	"lang": "it",
+	"retweeted": false,
+	"source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+	"text": "Guida ai sistemi operativi delle TV Smart https://t.co/7VtFc7ddQK",
+	"truncated": false,
+	"urls": {
+		"https://t.co/7VtFc7ddQK": "http://dlvr.it/L8kgQj"
+	},
+	"user": {
+		"created_at": "Fri Dec 18 13:04:47 +0000 2009",
+		"description": "L'Aggregatore di feed e notizie informatiche",
+		"followers_count": 815,
+		"friends_count": 5,
+		"geo_enabled": true,
+		"id": 97661530,
+		"lang": "it",
+		"listed_count": 37,
+		"location": "Novara",
+		"name": "Notizie Informatiche",
+		"profile_background_color": "0099B9",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+		"profile_background_tile": false,
+		"profile_image_url": "https://pbs.twimg.com/profile_images/637441147/imagelogo_normal.png",
+		"profile_link_color": "0099B9",
+		"profile_sidebar_fill_color": "95E8EC",
+		"profile_text_color": "3C3940",
+		"protected": false,
+		"screen_name": "NotizieInfo",
+		"statuses_count": 82196,
+		"time_zone": "Rome",
+		"url": "http://t.co/bDvKGgnolB",
+		"utc_offset": 7200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:07:41 +0000 2016",
+	"favorited": false,
+	"id": 724932962572193793,
+	"lang": "en",
+	"retweeted": false,
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "Sony 55X850C TV review: Great picture, good sound, but some minor bugs - TechHive https://t.co/2ycp64Tvhg",
+	"truncated": false,
+	"urls": {
+		"https://t.co/2ycp64Tvhg": "http://news.google.com/news/url?sa=t&fd=R&ct2=us&usg=AFQjCNGBPgIyhoNZJoyR4SipOi3IbvtXAw&clid=c3a7d30bb8a4878e06b80cf16b898331&ei=Zx5vVrD1J9K7aLOroIAN&url=http://www.techhive.com/article/3007975/smart-tv/sony-55x850c-4k-lcd-smart-tv-review-great-picture-good-sound-but-some-minor-bugs.html&8h80r"
+	},
+	"user": {
+		"created_at": "Sat Aug 01 21:56:16 +0000 2015",
+		"description": "Breaking news and updates from the News Channel. Follow us and stay informed",
+		"followers_count": 1640,
+		"friends_count": 2352,
+		"id": 3303629808,
+		"lang": "en",
+		"listed_count": 96,
+		"location": "Palo Alto, CA",
+		"name": "News Channel",
+		"profile_background_color": "0000FF",
+		"profile_background_image_url": "http://pbs.twimg.com/profile_background_images/629013917805752320/A0TZ3zNl.jpg",
+		"profile_background_tile": true,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/3303629808/1442174834",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/643153916448780288/bSAGJJ-c_normal.jpg",
+		"profile_link_color": "89C9FA",
+		"profile_sidebar_fill_color": "000000",
+		"profile_text_color": "000000",
+		"protected": false,
+		"screen_name": "News_Channel3",
+		"statuses_count": 16128,
+		"time_zone": "Pacific Time (US & Canada)",
+		"utc_offset": -25200
+	}
+}, {
+	"created_at": "Tue Apr 26 12:07:40 +0000 2016",
+	"favorited": false,
+	"hashtags": ["Tech",
+		"TheGeeky"
+	],
+	"id": 724932959850127365,
+	"lang": "en",
+	"retweeted": false,
+	"source": "<a href=\"http://ifttt.com\" rel=\"nofollow\">IFTTT</a>",
+	"text": "StoryStream Secures $2.6M from MMC for its smart content platform https://t.co/2mm1YPqTFw by mikebutcher #Tech #TheGeeky Tv",
+	"truncated": false,
+	"urls": {
+		"https://t.co/2mm1YPqTFw": "http://tcrn.ch/1VUxdeF"
+	},
+	"user": {
+		"created_at": "Sat Feb 13 05:55:52 +0000 2016",
+		"default_profile": true,
+		"description": "Founder of TheGeeky Tv.. https://t.co/khY38SVJnp I provide u latest #Tech stuff you need to know on regular basis.",
+		"favourites_count": 180,
+		"followers_count": 77,
+		"friends_count": 8,
+		"id": 698385076636102658,
+		"lang": "en",
+		"listed_count": 85,
+		"name": "Shashank Garg",
+		"profile_background_color": "F5F8FA",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/698385076636102658/1456993862",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/705309492544561152/8mrgDZfi_normal.jpg",
+		"profile_link_color": "2B7BB9",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "ThegeekyTv",
+		"statuses_count": 9755,
+		"url": "https://t.co/khY38SVJnp"
+	}
+}, {
+	"created_at": "Tue Apr 26 12:05:24 +0000 2016",
+	"favorited": false,
+	"hashtags": ["2016myc"],
+	"id": 724932388602679297,
+	"lang": "ja",
+	"retweet_count": 8,
+	"retweeted": false,
+	"retweeted_status": {
+		"created_at": "Mon Apr 18 14:35:48 +0000 2016",
+		"favorite_count": 13,
+		"favorited": false,
+		"hashtags": ["2016myc"],
+		"id": 722071135404187648,
+		"lang": "ja",
+		"retweet_count": 8,
+		"retweeted": false,
+		"source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+		"text": "\ud83c\udf39https://t.co/iXDQyHCYlB\n\ud83d\udc30https://t.co/wMNuOjPwzk\n\ud83c\udf39https://t.co/nFJPntFBuO\n\ud83d\udc30https://t.co/TbAWbUmmof\u2026\n\n\u6295\u7968\u304a\u9858\u3044\u3057\u307e\u3059(^.^)\n#2016myc",
+		"truncated": false,
+		"urls": {
+			"https://t.co/TbAWbUmmof": "http://retsu.y-champ.jp/sp/gakuen/tale",
+			"https://t.co/iXDQyHCYlB": "https://www.miss-yc.net/vote/106/show",
+			"https://t.co/nFJPntFBuO": "http://y-champ.jp/smart/vote2016/",
+			"https://t.co/wMNuOjPwzk": "http://mysma.tv/tvlist/2016myc/"
+		},
+		"user": {
+			"created_at": "Sun Apr 10 16:13:50 +0000 2016",
+			"default_profile": true,
+			"description": "\u30c1\u30e3\u30fc\u30e0\u30dd\u30a4\u30f3\u30c8\u306f\u7af9\u5185\u82b1(\u672c\u540d)\u3068\u3086\u3046\u540d\u3067\u3059\u3002(^.^) \u30d5\u30a1\u30f3\u3082\u3044\u306a\u3044start\u3002\u3042\u308b\u610f\u5473\u52c7\u8005\u3002\u4eca\u306e\u6b66\u5668\u306f\u73fe\u5f79\u9ad8\u6821\u751f\u3068\u3086\u3046\u3053\u3068!\u79c1\u3060\u3051\u306e\u4e16\u754c\u89b3\u306b\u7686\u3093\u306a\u3092\u9023\u308c\u8fbc\u3080\u3053\u3068\u304c\u76ee\u6a19\u3002",
+			"followers_count": 129,
+			"friends_count": 9,
+			"id": 719196699428659200,
+			"lang": "en",
+			"listed_count": 4,
+			"name": "\u7af9\u5185\u82b1(2016\u30e4\u30f3\u30c1\u30e3\u30f3\u5019\u88dc\u751f)",
+			"profile_background_color": "F5F8FA",
+			"profile_background_tile": false,
+			"profile_banner_url": "https://pbs.twimg.com/profile_banners/719196699428659200/1461510981",
+			"profile_image_url": "https://pbs.twimg.com/profile_images/721318004076650496/NfnrzYqI_normal.jpg",
+			"profile_link_color": "2B7BB9",
+			"profile_sidebar_fill_color": "DDEEF6",
+			"profile_text_color": "333333",
+			"protected": false,
+			"screen_name": "hn_9811",
+			"statuses_count": 29,
+			"url": "https://t.co/Ukjr3IcVp8"
+		}
+	},
+	"source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+	"text": "RT @hn_9811: \ud83c\udf39https://t.co/iXDQyHCYlB\n\ud83d\udc30https://t.co/wMNuOjPwzk\n\ud83c\udf39https://t.co/nFJPntFBuO\n\ud83d\udc30https://t.co/TbAWbUmmof\u2026\n\n\u6295\u7968\u304a\u9858\u3044\u3057\u307e\u3059(^.^)\n#2016myc",
+	"truncated": false,
+	"urls": {
+		"https://t.co/TbAWbUmmof": "http://retsu.y-champ.jp/sp/gakuen/tale",
+		"https://t.co/iXDQyHCYlB": "https://www.miss-yc.net/vote/106/show",
+		"https://t.co/nFJPntFBuO": "http://y-champ.jp/smart/vote2016/",
+		"https://t.co/wMNuOjPwzk": "http://mysma.tv/tvlist/2016myc/"
+	},
+	"user": {
+		"created_at": "Tue Apr 26 06:14:40 +0000 2016",
+		"default_profile": true,
+		"description": "HKT48 NMB48SKE48AKB48NGT48\u4e43\u6728\u574246\u6b05\u574246",
+		"favourites_count": 362,
+		"followers_count": 20,
+		"friends_count": 310,
+		"id": 724844120242569216,
+		"lang": "ja",
+		"location": "\u5ca1\u5c71 \u5009\u6577\u5e02\u6771",
+		"name": "\u68ee\u667a\u4fe1AKB48\uff06SKE48\uff06NMB48",
+		"profile_background_color": "F5F8FA",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/724844120242569216/1461651386",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/724844961963872256/6LrRBUhL_normal.jpg",
+		"profile_link_color": "2B7BB9",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "tomo57213455",
+		"statuses_count": 370
+	},
+	"user_mentions": [{
+		"id": 719196699428659200,
+		"name": "\u7af9\u5185\u82b1(2016\u30e4\u30f3\u30c1\u30e3\u30f3\u5019\u88dc\u751f)",
+		"screen_name": "hn_9811"
+	}]
+}, {
+	"created_at": "Tue Apr 26 12:04:56 +0000 2016",
+	"favorited": false,
+	"hashtags": ["EmpezamosConTodo"],
+	"id": 724932270885339136,
+	"lang": "es",
+	"retweeted": false,
+	"source": "<a href=\"http://www.empezamoscontodo.com.ar/\" rel=\"nofollow\">Garbarino - #EmpezamosConTodo</a>",
+	"text": "Copamos la casa del que tiene smart TV y #EmpezamosConTodo la marat\u00f3n de Netflix! Estoy participando x mi smart TV! https://t.co/gdOqXZZqoW",
+	"truncated": false,
+	"urls": {
+		"https://t.co/gdOqXZZqoW": "https://cards.twitter.com/cards/1os0iz/1n48i"
+	},
+	"user": {
+		"created_at": "Sun Jan 06 06:28:57 +0000 2013",
+		"default_profile": true,
+		"description": "Nacida en Esquina Ctes criada en Paso de los Libres Ctes y adoptada por Concordia Entre Rios. Bancaria. Empresaria.",
+		"favourites_count": 741,
+		"followers_count": 102,
+		"friends_count": 264,
+		"id": 1064942078,
+		"lang": "es",
+		"location": "Concordia",
+		"name": "Barbara Rajzner",
+		"profile_background_color": "C0DEED",
+		"profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+		"profile_background_tile": false,
+		"profile_banner_url": "https://pbs.twimg.com/profile_banners/1064942078/1460941231",
+		"profile_image_url": "https://pbs.twimg.com/profile_images/723629530846486528/z2GZxJt-_normal.jpg",
+		"profile_link_color": "0084B4",
+		"profile_sidebar_fill_color": "DDEEF6",
+		"profile_text_color": "333333",
+		"protected": false,
+		"screen_name": "barbiveroni",
+		"statuses_count": 615
+	}
+}]

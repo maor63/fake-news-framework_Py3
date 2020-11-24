@@ -1,0 +1,2 @@
+Total_Observations,Train_Size,Graph,Heuristic,K,Start_Date,End_Date,Duration,Train_Nodes_in_Graph,Test_Nodes_in_Graph,Number_of_Edges,Number_of_RandomGuesses,Memory Consumption,Iteration,Precision,Recall,F1,Support,AUC,Avg_Precision,Avg_Recall,Avg_F1,Avg_AUC,Avg_Support,Std_Dev_Precision,STD_Dev_Recall,Sev_Dev_F1,Std_Dev_AUC,Std_Dev_Support  
+8,6,cocitation,majority_voting,8,2020-09-03 13:37:35.293495,2020-09-03 13:37:35.317431,0:00:00.023936,6,2,7,0,158.88671875 ,0,1.0,1.0,1.0, None,1.0,1.0,1.0,1.0, 1.0,0.0, 0.0, 0.0, 0.0, 0.0,0.0 
