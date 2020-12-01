@@ -1,4 +1,3 @@
-
 import datetime
 
 from DB.schema_definition import Post, date
@@ -22,36 +21,27 @@ class CsvToTableImporter(AbstractController):
 
     def import_csv_to_table(self, input_table_name):
         for table_csv in [x for x in os.listdir(self._input_path) if x.startswith(input_table_name)]:
-            origin_table = pd.read_sql_table(input_table_name, self._db.engine)
-            imported_table = pd.read_csv(self._input_path + table_csv)
-            merged_tables = pd.merge(origin_table, imported_table, how='outer')
-            assert isinstance(merged_tables, pd.DataFrame)
-            object_table = merged_tables.select_dtypes(include=['object']).astype('unicode')
-            primitive_table = merged_tables.select_dtypes(exclude=['object'])
-            merged_tables = object_table.join(primitive_table)
-            row_count = merged_tables.shape[0]
+            if input_table_name == 'claims':
+                imported_table = pd.read_csv(self._input_path + table_csv, dtype={'verdict': str})
+            else:
+                imported_table = pd.read_csv(self._input_path + table_csv)
+
+            row_count = imported_table.shape[0]
             max_object_without_save = 100000
             start = max_object_without_save
-            merged_tables[:min(start, row_count)].to_sql(input_table_name, con=self._db.engine, if_exists='replace',
+            imported_table[:min(start, row_count)].to_sql(input_table_name, con=self._db.engine, if_exists='replace',
                                                          index=False)
             while start < row_count:
                 print("\rAdd rows to DB {0}/{1}".format(start, row_count), end="")
-                merged_tables[start:min(start + max_object_without_save, row_count)].to_sql(input_table_name,
+                imported_table[start:min(start + max_object_without_save, row_count)].to_sql(input_table_name,
                                                                                             con=self._db.engine,
-                                                                                            if_exists='append', index=False)
+                                                                                            if_exists='append',
+                                                                                            index=False)
                 start += max_object_without_save
                 self._db.session.commit()
             print()
 
-    # def import_csv_to_table(self, input_table_name):
-    #     for table_csv in [x for x in os.listdir(self._input_path) if x.startswith(input_table_name)]:
-    #         print("Add {} to {} table".format(table_csv, input_table_name))
-    #         imported_table = pd.read_csv(os.path.join(self._input_path, table_csv))
-    #         # object_table = imported_table.select_dtypes(include=['object']).astype('unicode')
-    #         # primitive_table = imported_table.select_dtypes(exclude=['object'])
-    #         # merged_tables = object_table.join(primitive_table)
-    #         imported_table.to_sql(input_table_name, con=self._db.engine, if_exists='append', index=False)
-
+            # merged_tables = pd.merge(origin_table, imported_table, how='outer')
             # assert isinstance(merged_tables, pd.DataFrame)
             # object_table = merged_tables.select_dtypes(include=['object']).astype('unicode')
             # primitive_table = merged_tables.select_dtypes(exclude=['object'])
@@ -65,7 +55,35 @@ class CsvToTableImporter(AbstractController):
             #     print("\rAdd rows to DB {0}/{1}".format(start, row_count), end="")
             #     merged_tables[start:min(start + max_object_without_save, row_count)].to_sql(input_table_name,
             #                                                                                 con=self._db.engine,
-            #                                                                                 if_exists='append', index=False)
+            #                                                                                 if_exists='append',
+            #                                                                                 index=False)
             #     start += max_object_without_save
             #     self._db.session.commit()
             # print()
+
+    # def import_csv_to_table(self, input_table_name):
+    #     for table_csv in [x for x in os.listdir(self._input_path) if x.startswith(input_table_name)]:
+    #         print("Add {} to {} table".format(table_csv, input_table_name))
+    #         imported_table = pd.read_csv(os.path.join(self._input_path, table_csv))
+    #         # object_table = imported_table.select_dtypes(include=['object']).astype('unicode')
+    #         # primitive_table = imported_table.select_dtypes(exclude=['object'])
+    #         # merged_tables = object_table.join(primitive_table)
+    #         imported_table.to_sql(input_table_name, con=self._db.engine, if_exists='append', index=False)
+
+    # assert isinstance(merged_tables, pd.DataFrame)
+    # object_table = merged_tables.select_dtypes(include=['object']).astype('unicode')
+    # primitive_table = merged_tables.select_dtypes(exclude=['object'])
+    # merged_tables = object_table.join(primitive_table)
+    # row_count = merged_tables.shape[0]
+    # max_object_without_save = 100000
+    # start = max_object_without_save
+    # merged_tables[:min(start, row_count)].to_sql(input_table_name, con=self._db.engine, if_exists='replace',
+    #                                              index=False)
+    # while start < row_count:
+    #     print("\rAdd rows to DB {0}/{1}".format(start, row_count), end="")
+    #     merged_tables[start:min(start + max_object_without_save, row_count)].to_sql(input_table_name,
+    #                                                                                 con=self._db.engine,
+    #                                                                                 if_exists='append', index=False)
+    #     start += max_object_without_save
+    #     self._db.session.commit()
+    # print()

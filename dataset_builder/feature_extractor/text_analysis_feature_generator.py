@@ -25,6 +25,7 @@ class Text_Anlalyser_Feature_Generator(BaseFeatureGenerator):
         nltk.download('punkt')
         nltk.download('averaged_perceptron_tagger')
         nltk.download('universal_tagset')
+        nltk.download('stopwords')
         self._targeted_fields = self._config_parser.eval(self.__class__.__name__, "targeted_fields")
         self._load_stop_words()
         self._words = words.words()

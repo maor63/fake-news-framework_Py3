@@ -723,7 +723,10 @@ class Experimentor(Method_Executor):
         selected_features_path = self._full_path_model_directory + self._prepared_classifier_selected_features_file_name
 
         trained_classifier = joblib.load(full_path_selected_model)
-        selected_features = joblib.load(selected_features_path)
+        if '.csv' in selected_features_path:
+            selected_features = set(pd.read_csv(selected_features_path)['Feature_Name'])
+        else:
+            selected_features = joblib.load(selected_features_path)
 
         author_features_dataframe = self._get_author_features_dataframe()
         labeled_features_dataframe = retreive_labeled_authors_dataframe(self._targeted_class_name,
@@ -732,9 +735,17 @@ class Experimentor(Method_Executor):
         labeled_features_dataframe, labeled_targeted_class_series, index_field_series = \
             self._prepare_dataframe_for_learning(labeled_features_dataframe)
 
-        original_column_names = list(labeled_features_dataframe.columns.values)
-        features_to_remove = self._calculate_features_to_remove(selected_features, original_column_names)
-        labeled_features_dataframe = self._remove_features(features_to_remove, labeled_features_dataframe)
+        # original_column_names = list(labeled_features_dataframe.columns.values)
+        # features_to_remove = self._calculate_features_to_remove(selected_features, original_column_names)
+        # labeled_features_dataframe = self._remove_features(features_to_remove, labeled_features_dataframe)
+        original_column_names = set(labeled_features_dataframe.columns.values)
+        missing_features = selected_features - original_column_names
+        if len(missing_features) > 0:
+            print('the following features are missing for the pre-trained model:')
+            print(list(missing_features))
+            return
+
+        labeled_features_dataframe = labeled_features_dataframe[list(selected_features)]
 
         # if best_classifier_name == "XGBoost":
         #     labeled_features_dataframe = self._set_dataframe_columns_types(labeled_features_dataframe)
@@ -743,7 +754,7 @@ class Experimentor(Method_Executor):
             self._predict_classifier(trained_classifier, labeled_features_dataframe)
 
         result_performance_tuple, class_1_name, class_2_name = self._calculate_performance(
-            self._targeted_classifier_name, self._targeted_classifier_num_of_features,
+            self._targeted_classifier_name, len(selected_features),
             selected_features, [(-1, -1, -1), (-1, -1, -1)], labeled_targeted_class_series, predictions_series_int,
             predictions_proba)
 
@@ -762,7 +773,7 @@ class Experimentor(Method_Executor):
         df = pd.DataFrame(index_field_series, columns=[self._index_field])
 
         df["Best_Classifier"] = self._targeted_classifier_name
-        df["Num_of_Features"] = df.shape[0] * [self._targeted_classifier_num_of_features]
+        df["Num_of_Features"] = df.shape[0] * [len(selected_features)]
         # df["Best_Features"] = df.shape[0] * best_performance_feature_names
 
         df["confidence"] = predictions_proba_series.values
@@ -800,7 +811,7 @@ class Experimentor(Method_Executor):
         labeled_features_dataframe, targeted_class_series, index_field_series = \
             self._prepare_dataframe_for_learning(labeled_features_dataframe)
 
-        labeled_features_dataframe = labeled_features_dataframe.convert_objects(convert_numeric=True)
+        labeled_features_dataframe = labeled_features_dataframe.astype(float)
         labeled_features_dataframe = labeled_features_dataframe.fillna(0)
 
         X = labeled_features_dataframe
