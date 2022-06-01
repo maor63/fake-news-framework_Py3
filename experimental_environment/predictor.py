@@ -1,5 +1,5 @@
 # Created by Aviad Elyashar at 12/07/2017
-from sklearn.externals import joblib
+import joblib
 
 from commons.data_frame_creator import DataFrameCreator
 from preprocessing_tools.abstract_controller import AbstractController

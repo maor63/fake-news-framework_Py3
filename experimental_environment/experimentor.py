@@ -13,7 +13,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC, LinearSVC
-from sklearn.tree import tree
+#from sklearn.tree import tree
 from sklearn.utils.multiclass import unique_labels
 import matplotlib.pyplot as plt
 from commons.commons import retreive_labeled_authors_dataframe, replace_nominal_class_to_numeric, \
@@ -24,7 +24,7 @@ from commons.method_executor import Method_Executor
 import time
 import pandas as pd
 import os
-from sklearn.externals import joblib
+import joblib
 import numpy as np
 # from sklearn.cross_validation import StratifiedKFold
 from sklearn.model_selection import KFold

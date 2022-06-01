@@ -3,7 +3,7 @@
 import csv
 import logging
 import pickle
-from sklearn.externals import joblib
+import joblib
 from sklearn.feature_selection import SelectKBest, f_classif, VarianceThreshold
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score, roc_auc_score
 from sklearn.neural_network import MLPClassifier

@@ -139,10 +139,10 @@ class TwitterApiRequester:
         print(('--- get_follower_ids_by_user_id: ' + str(user_id)))
 
         #follower_ids = self.api.GetFollowerIDs(user_id=user_id, total_count=None)
-        follower_ids = self.api.GetFollowerIDs(user_id=user_id)
+        follower_ids, cursor = self.api.GetFollowerIDs(user_id=user_id)
 
         print(("Number of retrieved followers ids is: " + str(len(follower_ids))))
-        return follower_ids
+        return follower_ids, cursor
 
     def get_sleep_time_for_follower_ids(self):
         sec = self.api.GetSleepTime('/followers/ids')

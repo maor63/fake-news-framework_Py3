@@ -661,6 +661,29 @@ class News_Article_Item(Base):
             self.content, self.img_url)
 
 
+class UkraineRussiaConflictPOI(Base):
+    __tablename__ = 'ukraine_russia_conflict_pois'
+
+    user_screen_name = Column(Unicode, primary_key=True)
+    poi_type = Column(Unicode, default=None)
+    url = Column(Unicode, default=None)
+    original_screen_name = Column(Unicode, default=None)
+
+    def __repr__(self):
+        return "<POI(user_screen_name='%s', poi_type='%s', url='%s')>" % (self.user_screen_name, self.poi_type, self.url)
+
+
+class TwitterUserIdFollowersNextCursor(Base):
+    __tablename__ = 'twitter_user_id_followers_next_cursor'
+
+    user_id = Column(Unicode, primary_key=True)
+    cursor = Column(Unicode, default=None)
+
+    def __repr__(self):
+        return "<TwitterUserIdFollowersNextCursor(user_id='%s', cursor='%s', url='%s')>" % (self.user_id, self.cursor)
+
+
+
 class DB():
     '''
     Represents the primary blackboard of the system.
@@ -4845,6 +4868,17 @@ class DB():
         q = """
             SELECT Optional_POIs_with_twitter_screen_name.twitter_author_screen_name
             FROM Optional_POIs_with_twitter_screen_name
+            """
+        query = text(q)
+        result = self.session.execute(query)
+        cursor = result.cursor
+        screen_names = self.result_iter(cursor)
+        return [r[0] for r in screen_names]
+
+    def get_ukraine_russia_conflict_poi_screen_names(self):
+        q = """
+            SELECT ukraine_russia_conflict_pois.user_screen_name
+            FROM ukraine_russia_conflict_pois
             """
         query = text(q)
         result = self.session.execute(query)

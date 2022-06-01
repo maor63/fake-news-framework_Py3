@@ -5,7 +5,7 @@ import logging
 
 from numpy import select
 from pandas import DataFrame
-from sklearn.externals import joblib
+import joblib
 
 from experimental_environment.refactored_experimental_enviorment.data_handler import Data_Handler
 from preprocessing_tools.abstract_controller import AbstractController

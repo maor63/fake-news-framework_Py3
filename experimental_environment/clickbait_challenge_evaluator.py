@@ -10,7 +10,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.metrics import roc_auc_score, accuracy_score, precision_score, recall_score,confusion_matrix, precision_recall_fscore_support
 from .results_container import ResultsContainer
 import os
-from sklearn.externals import joblib
+import joblib
 from sklearn.model_selection import StratifiedKFold
 import numpy as np
 

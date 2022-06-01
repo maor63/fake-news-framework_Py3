@@ -24,7 +24,7 @@ from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.metrics import *
 from sklearn.model_selection import StratifiedKFold
-from sklearn.externals import joblib
+import joblib
 
 from commons.commons import *
 from commons.method_executor import Method_Executor

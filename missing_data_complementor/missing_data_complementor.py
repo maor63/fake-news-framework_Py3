@@ -5,7 +5,7 @@ import timeit
 from collections import namedtuple
 from collections import namedtuple, Counter
 import pandas as pd
-from twitter.error import TwitterError
+from twitter import TwitterError
 
 from DB.schema_definition import Post, Author, Post_citation, AuthorConnection
 from commons.commons import *
@@ -203,7 +203,8 @@ class MissingDataComplementor(Method_Executor):
         #twitter_author_screen_names = self._db.get_intersection_of_labor_union_and_healthcare_users_followers_ids()
         #twitter_author_screen_names = self._db.get_healthcare_labor_union_follower_ids()
         #twitter_author_screen_names = self._db.get_poi_screen_names()
-        twitter_author_screen_names = self._db.get_follower_ids_to_crawl()
+        twitter_author_screen_names = self._db.get_ukraine_russia_conflict_poi_screen_names()
+        #twitter_author_screen_names = self._db.get_follower_ids_to_crawl()
         #twitter_author_screen_names = [int(i) for i in twitter_author_screen_names]
         # brought about 250+ POIs from Idan Cohen
         #twitter_author_screen_names = self._db.get_poi_v6_screen_names()
