@@ -4979,3 +4979,18 @@ class DB():
         cursor = result.cursor
         author_popularity_tupls = self.result_iter(cursor)  # , a
         return author_popularity_tupls
+
+
+    def delete_pois_authors(self):
+
+        query = """
+            DELETE
+            FROM authors
+            WHERE authors.author_screen_name IN(
+                SELECT ukraine_russia_conflict_pois.user_screen_name
+                FROM ukraine_russia_conflict_pois
+            )
+        """
+        query = text(query)
+        self.session.execute(query)
+        self.session.commit()

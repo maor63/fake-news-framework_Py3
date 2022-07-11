@@ -1146,3 +1146,8 @@ class MissingDataComplementor(Method_Executor):
                 logging.info("Not authorized for user id: {0}".format(user_id))
 
         return author_connections
+
+    def delete_POIs_from_authors_table(self):
+        print("start delete_POIs_from_authors_table")
+        self._db.delete_pois_authors()
+        print("finished delete_POIs_from_authors_table")

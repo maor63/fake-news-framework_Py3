@@ -15,7 +15,7 @@ class UkraineRussiaConflictPOIImporter(AbstractController):
 
     def execute(self, window_start=None):
         df = pd.read_csv(self._input_file_path + self._input_file_name)
-        df["user_screen_name"] = df["Screen_name"].apply(lambda s: s[1::])
+        df["user_screen_name"] = df["screen_name"].apply(lambda s: s[1::])
         current_time = str(datetime.datetime.now())[0:11]
         df.to_csv(self._output_file_path + f"pois_ready_for_db_{current_time}.csv")
 
@@ -26,7 +26,7 @@ class UkraineRussiaConflictPOIImporter(AbstractController):
         for index, row in tqdm(df.iterrows()):
             user_screen_name = row['user_screen_name']
             poi_type = row['POI_type']
-            original_screen_name = row['Screen_name']
+            original_screen_name = row['screen_name']
             url = row['URL']
 
             poi = UkraineRussiaConflictPOI()
