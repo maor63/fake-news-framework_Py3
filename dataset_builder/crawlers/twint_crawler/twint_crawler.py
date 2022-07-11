@@ -7,6 +7,7 @@ import pandas as pd
 from tqdm import tqdm
 import datetime
 import twint
+from commons.commons import *
 from twint.token import RefreshTokenException
 import nest_asyncio
 nest_asyncio.apply()
@@ -23,7 +24,7 @@ class TwintCrawler(Method_Executor):
         self._until = self._config_parser.get(self.__class__.__name__, "until")
 
 
-    def _save_timeline_by_author_name(self, t, author_name):
+    def _save_timeline_by_author_name(self, t, author_name, current_path):
         # t.Search = "from:@amit_segal"
         t.Search = author_name
         # t.Limit = None  # number of Tweets to scrape
@@ -31,20 +32,30 @@ class TwintCrawler(Method_Executor):
         t.Since = self._since
         t.Until = self._until
 
-        t.Output = self._output_file_path + f"{author_name[6::]}.csv"  # path to csv file
+        #t.Output = self._output_file_path + f"{author_name[6::]}.csv"  # path to csv file
+        t.Output = current_path + f"{author_name[6::]}.csv"  # path to csv file
         twint.run.Search(t)
 
     def run(self):
-        current_date = str(datetime.datetime.now())[0: 11]
+        #current_date = str(datetime.datetime.now())[0: 11]
         authors = self._db.get_authors()
         authors_for_twint = [f"from:@{author.author_screen_name}" for author in authors]
 
         t = twint.Config()
 
-        for author in tqdm(authors_for_twint):
+        while True:
+            print("current_path: " + "{0}-{1}".format(self._since, self._until))
+            current_path = os.path.join(self._output_file_path, "{0}-{1}/".format(self._since, self._until))
+            os.mkdir(current_path)
 
-            self._save_timeline_by_author_name(t, author)
-        print("Done!!!")
+            for author in tqdm(authors_for_twint):
+                self._save_timeline_by_author_name(t, author, current_path)
+
+            self.__update_since_and_until_for_new_iteration()
+
+            count_down_time(100)
+            print("Done iteration !!!")
+
 
             # #t.Search = "from:@amit_segal"
             # t.Search = author
@@ -119,4 +130,15 @@ class TwintCrawler(Method_Executor):
         statistics_df.to_csv(self._output_file_path + f"statistics_{current_date}.csv")
         print("Done!!!!")
 
+    def __update_since_and_until_for_new_iteration(self):
+        format_date = '%Y-%m-%d'
+        until_date = str_to_date(self._until, formate=format_date)
+        since_date_updated_date = until_date + timedelta(days=1)
+        since_date_updated_str = date_to_str(since_date_updated_date, formate=format_date)
+
+        now = datetime.datetime.now()
+        until_date_updated_str = date_to_str(now, formate=format_date)
+
+        self._since = since_date_updated_str
+        self._until = until_date_updated_str
 
