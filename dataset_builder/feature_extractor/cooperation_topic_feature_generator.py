@@ -8,7 +8,7 @@ from dataset_builder.feature_extractor.base_feature_generator import BaseFeature
 import numpy as np
 from scipy.stats import kurtosis, skew
 import pandas as pd
-from sklearn.metrics import jaccard_score
+from sklearn.metrics import jaccard_similarity_score
 from sklearn.preprocessing import LabelEncoder
 
 try:

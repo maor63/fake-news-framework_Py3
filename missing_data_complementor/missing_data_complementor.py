@@ -201,9 +201,10 @@ class MissingDataComplementor(Method_Executor):
         #twitter_author_screen_names = self._db.get_labor_employees_screen_names()
         #twitter_author_screen_names = self._db.get_follower_ids_of_hospitals_and_labor_unions()
         #twitter_author_screen_names = self._db.get_intersection_of_labor_union_and_healthcare_users_followers_ids()
-        #twitter_author_screen_names = self._db.get_healthcare_labor_union_follower_ids()
+        #twitter_author\_screen_names = self._db.get_healthcare_labor_union_follower_ids()
         #twitter_author_screen_names = self._db.get_poi_screen_names()
-        twitter_author_screen_names = self._db.get_ukraine_russia_conflict_poi_screen_names()
+        #twitter_author_screen_names = self._db.get_ukraine_russia_conflict_poi_screen_names()
+        twitter_author_screen_names = self._db.get_screen_names()
         #twitter_author_screen_names = self._db.get_follower_ids_to_crawl()
         #twitter_author_screen_names = [int(i) for i in twitter_author_screen_names]
         # brought about 250+ POIs from Idan Cohen

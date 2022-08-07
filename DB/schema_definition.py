@@ -66,6 +66,8 @@ class Author(Base):
     favourites_count = Column(Integer, default=None)
     friends_count = Column(Integer, default=None)
     listed_count = Column(Integer, default=None)
+    reply_count = Column(Integer, default=None)
+    retweets_count = Column(Integer, default=None)
     language = Column(Unicode, default=None)
     profile_background_color = Column(Unicode, default=None)
     profile_background_tile = Column(Unicode, default=None)
@@ -163,8 +165,8 @@ class PostRetweeterConnection(Base):
 class PostUserMention(Base):
     __tablename__ = 'post_user_mentions'
 
-    post_guid = Column(Integer, primary_key=True)
-    user_mention_twitter_id = Column(Integer, primary_key=True)
+    post_guid = Column(Unicode, primary_key=True)
+    user_mention_twitter_id = Column(Unicode, primary_key=True)
     user_mention_screen_name = Column(Unicode, default=None)
 
     def __repr__(self):
@@ -208,8 +210,8 @@ class Post(Base):
     post_osn_id = Column(Integer, default=None)
     retweet_count = Column(Integer, default=None)
     favorite_count = Column(Integer, default=None)
-    # reply_count = Column(Integer, default=None)
-    # language = Column(Unicode, default=None)
+    reply_count = Column(Integer, default=None)
+    language = Column(Unicode, default=None)
     created_at = Column(Unicode, default=None)
     xml_importer_insertion_date = Column(Unicode, default=None)
     timeline_importer_insertion_date = Column(Unicode, default=None)
@@ -219,7 +221,6 @@ class Post(Base):
         return "<Post(post_id='%s', guid='%s', title='%s', url='%s', date='%s', content='%s', author='%s', is_detailed='%s',  is_LB='%s',domain='%s',author_guid='%s')>" % (
             self.post_id, self.guid, self.title, self.url, self.date, self.content, self.author, self.is_detailed,
             self.is_LB, self.domain, self.author_guid)
-
 
 class Post_citation(Base):
     __tablename__ = 'post_citations'
@@ -466,8 +467,8 @@ class PostTopicMapping(Base):
 class Term(Base):
     __tablename__ = "terms"
 
-    term_id = Column(Integer, primary_key=True)
-    description = Column(Unicode, default=None)
+    term_id = Column(Integer)
+    description = Column(Unicode, primary_key=True)
 
     def __repr__(self):
         return "<Term(term_id='%s',description='%s')>" % (
@@ -518,6 +519,12 @@ class Claim_Tweet_Connection(Base):
     claim_id = Column(Unicode, primary_key=True)  # PolitiFact post
     post_id = Column(Unicode, primary_key=True)  # crawled tweet by
 
+
+class Term_Tweet_Connection(Base):
+    __tablename__ = "term_tweet_connection"
+
+    term_id = Column(Unicode, primary_key=True)
+    post_id = Column(Unicode, primary_key=True)  # crawled tweet by
 
 class Claim(Base):
     __tablename__ = "claims"
@@ -4003,6 +4010,19 @@ class DB():
     def get_terms(self):
         return self.session.query(Term).all()
 
+    def get_next_term_id(self):
+        new_term_id = -1
+
+        terms = self.get_terms()
+        term_ids = [term.term_id for term in terms]
+
+        if len(term_ids) > 0:
+            max_term_id = max(term_ids)
+            new_term_id = max_term_id + 1
+        else:
+            new_term_id = 1
+        return new_term_id, terms
+
     def get_author_topic_mapping(self):
         query = """
                 SELECT * FROM author_topic_mapping
@@ -4879,6 +4899,17 @@ class DB():
         q = """
             SELECT ukraine_russia_conflict_pois.user_screen_name
             FROM ukraine_russia_conflict_pois
+            """
+        query = text(q)
+        result = self.session.execute(query)
+        cursor = result.cursor
+        screen_names = self.result_iter(cursor)
+        return [r[0] for r in screen_names]
+
+    def get_screen_names(self):
+        q = """
+            SELECT authors.author_screen_name
+            FROM authors
             """
         query = text(q)
         result = self.session.execute(query)

@@ -5,7 +5,9 @@ from commons.method_executor import Method_Executor
 from commons.commons import count_down_time
 import pandas as pd
 from tqdm import tqdm
+from DB.schema_definition import Term, Term_Tweet_Connection, Post, Author, PostUserMention, Post_citation, Image_Tags
 import datetime
+import re
 import twint
 from commons.commons import *
 from twint.token import RefreshTokenException
@@ -18,11 +20,52 @@ __author__ = "Aviad Elyashar"
 class TwintCrawler(Method_Executor):
     def __init__(self, db):
         Method_Executor.__init__(self, db)
-        #self._output_path = self._config_parser.eval(self.__class__.__name__, "output_path")
         self._output_file_path = self._config_parser.get(self.__class__.__name__, "output_file_path")
         self._since = self._config_parser.get(self.__class__.__name__, "since")
         self._until = self._config_parser.get(self.__class__.__name__, "until")
 
+    def get_tweets_by_terms(self):
+        t = twint.Config()
+
+        current_path = self._output_file_path + "crawled_tweets\\"
+        if not os.path.exists(current_path):
+            os.mkdir(current_path)
+
+        print("current_path: " + "{0}-{1}".format(self._since, self._until))
+        current_path = os.path.join(current_path, "{0}-{1}\\".format(self._since, self._until))
+
+        if not os.path.exists(current_path):
+            os.mkdir(current_path)
+
+        df = pd.read_csv(self._output_file_path + "hashtags_from_Abigail.csv", encoding= 'unicode_escape')
+        hashtags = df["hashtag"].tolist()
+        hashtags = [hashtag.lower().strip() for hashtag in hashtags]
+
+        for hashtag in tqdm(hashtags):
+            try:
+                self.__save_tweets_by_term(t, hashtag, current_path)
+
+            except RefreshTokenException:
+                print(hashtag)
+                count_down_time(900)
+                self.__save_tweets_by_term(t, hashtag, current_path)
+
+            except TimeoutError as e:
+                print(e)
+                print(hashtag)
+                count_down_time(900)
+                self.__save_tweets_by_term(t, hashtag, current_path)
+
+        print("Done!!!")
+
+
+    def __save_tweets_by_term(self,t, term, current_path):
+        t.Search = term
+        t.Store_csv = True  # store tweets in a csv file
+        t.Since = self._since
+        t.Until = self._until
+        t.Output = f"{current_path}{term}.csv"  # path to csv file
+        twint.run.Search(t)
 
     def _save_timeline_by_author_name(self, t, author_name, current_path):
         # t.Search = "from:@amit_segal"
@@ -142,3 +185,193 @@ class TwintCrawler(Method_Executor):
         self._since = since_date_updated_str
         self._until = until_date_updated_str
 
+
+    def __create_term(self, hashtag):
+        term = Term()
+
+        term.term_id = self.__next_term_id
+        self.__next_term_id += 1
+
+        term.description = hashtag
+        return term
+
+    def __convert_df_row_to_author(self, row):
+        author = Author()
+
+        author.domain = self._domain
+
+        user_id = row["user_id"]
+        author.author_osn_id = user_id
+
+        username = row["username"]
+        author.author_screen_name = username
+        author.name = username
+
+        author.author_guid = compute_author_guid_by_author_name(username)
+
+        name = row["name"]
+        author.author_full_name = name
+
+
+        timezone = row["timezone"]
+        author.time_zone = timezone
+
+        place = row["place"]
+        author.location = place
+
+        geo = row["geo"]
+        author.geo_enabled = geo
+
+        reply_count = row["replies_count"]
+        author.replies_count = reply_count
+
+        retweets_count = row["retweets_count"]
+        author.retweets_count = retweets_count
+
+        likes_count = row["likes_count"]
+        author.likes_count = likes_count
+
+        author.original_tweet_importer_insertion_date = datetime.datetime.now()
+
+        return author
+
+    def __convert_row_to_user_mentions(self, row, post):
+        user_mentions = []
+        mentions = row["mentions"]
+        for mention_dict in mentions:
+            post_user_mention = PostUserMention()
+
+            post_user_mention.post_guid = post.post_guid
+            post_user_mention.user_mention_twitter_id = post.post_id
+
+            screen_name = mention_dict["screen_name"]
+            post_user_mention.user_mention_screen_name = screen_name
+
+            user_mentions.append(post_user_mention)
+        return user_mentions
+
+    def __convert_row_to_image_tags(self, row, post):
+        image_tags = []
+        photos = row["photos"]
+        for photo in photos:
+            image_tag = Image_Tags()
+
+            image_tag.post_id = post.post_id
+            image_tag.author_guid = post.author
+            image_tag.media_path = photo
+
+            image_tags.append(image_tag)
+        return image_tags
+
+    def __convert_row_to_post_citations(self, row, post):
+        post_citations = []
+
+        urls = row["urls"]
+        for url in urls:
+            post_citation = Post_citation()
+
+            post_citation.post_id_from = post.post_id
+            post_citation.post_id_to = "Unknown"
+            post_citation.url_from = post.url
+            post_citation.url_to = url
+
+            post_citations.append(post_citation)
+        return post_citations
+
+    def __convert_row_to_terms_and_term_tweet_connections(self, row, post, term_descr_term_dict):
+        hashtags = eval(row["hashtags"])
+
+        terms = []
+        term_tweet_connections = []
+        for hashtag in hashtags:
+            if hashtag not in term_descr_term_dict:
+                term = self.__create_term(hashtag)
+                term_descr_term_dict[hashtag] = term
+
+                terms.append(term)
+            else:
+                term = term_descr_term_dict[hashtag]
+
+            term_tweet_connection = Term_Tweet_Connection()
+
+            term_tweet_connection.term_id = term.term_id
+            term_tweet_connection.post_id = post.post_id
+            term_tweet_connections.append(term_tweet_connection)
+
+        return terms, term_tweet_connections
+
+    def __convert_df_row_to_post(self, row, author):
+        post = Post()
+
+        post.domain = self._domain
+
+        post_id = row["id"]
+        post.post_id = post_id
+
+        created_at = row["created_at"]
+        post.created_at = created_at
+
+        str_date = re.split("Jerusalem Daylight Time|Jerusalem Standard Time", created_at)[0].strip()
+        date = str_to_date(str_date)
+        post.date = date
+
+        post_url = row["link"]
+        post.url = post_url
+
+        username = row["username"]
+        post.author = author.author_guid
+
+        post_guid = compute_post_guid(post_url, username, str_date)
+        post.guid = post_guid
+
+        content = row["tweet"]
+        post.content = content
+
+        language = row["language"]
+        post.language = language
+
+        post.original_tweet_importer_insertion_date = datetime.datetime.now()
+
+        return post
+
+    def insert_posts_csv_into_db(self):
+        current_path = self._output_file_path + "crawled_tweets\\"
+        current_path = os.path.join(current_path, "{0}-{1}\\".format(self._since, self._until))
+
+        self.__next_term_id, terms = self._db.get_next_term_id()
+        term_descr_term_dict = {term.description: term for term in terms}
+
+        total_term_tweet_connections = []
+        total_terms = []
+        total_post_citations = []
+        authors = []
+        posts = []
+
+        files = os.listdir(current_path)
+        #files = [files[0]]
+
+        for file in tqdm(files):
+
+            df = pd.read_csv(current_path + file)
+
+            for index, row in tqdm(df.iterrows()):
+                #print(f"index={index}")
+                author = self.__convert_df_row_to_author(row)
+                authors.append(author)
+
+                post = self.__convert_df_row_to_post(row, author)
+                posts.append(post)
+
+                terms, term_tweet_connections = self.__convert_row_to_terms_and_term_tweet_connections(row, post, term_descr_term_dict)
+
+                total_terms = total_terms + terms
+                total_term_tweet_connections = total_term_tweet_connections + term_tweet_connections
+
+                post_citations = self.__convert_row_to_post_citations(row, post)
+                total_post_citations = total_post_citations + post_citations
+
+        self._db.addPosts(posts)
+        self._db.addPosts(authors)
+        self._db.addPosts(total_terms)
+        self._db.addPosts(total_term_tweet_connections)
+        self._db.addPosts(total_post_citations)
