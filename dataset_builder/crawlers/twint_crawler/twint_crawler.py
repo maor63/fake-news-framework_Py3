@@ -319,7 +319,9 @@ class TwintCrawler(Method_Executor):
         post.url = post_url
 
         username = row["username"]
-        post.author = author.author_guid
+        post.author = username
+
+        post.author_guid = author.author_guid
 
         post_guid = compute_post_guid(post_url, username, str_date)
         post.guid = post_guid
