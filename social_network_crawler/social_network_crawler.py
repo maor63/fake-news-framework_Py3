@@ -8,6 +8,7 @@ from DB.schema_definition import DB, AuthorConnection, PostRetweeterConnection, 
 from commons.consts import *
 from commons.commons import *
 from twitter import TwitterError
+from tqdm import tqdm
 
 
 class SocialNetworkCrawler(AbstractController):
@@ -53,29 +54,40 @@ class SocialNetworkCrawler(AbstractController):
         self._db.setUp()
 
     def fill_followers_ids_only(self, author_ids):
-        user_ids_cursors = []
-        for i, author_id in enumerate(author_ids):
+        #user_ids_cursors = []
+        for i, author_id in tqdm(enumerate(author_ids)):
             print("author_id: {0} {1}/{2}".format(author_id, i, len(author_ids)))
-            follower_ids, cursor = self._twitter_api_requester.get_follower_ids_by_user_id(author_id)
 
-            user_id_cursor = TwitterUserIdFollowersNextCursor()
-            user_id_cursor.user_id = author_id
-            user_id_cursor.cursor = cursor
+            try:
+                follower_ids = self._twitter_api_requester.get_follower_ids_by_user_id(author_id)
 
-            user_ids_cursors.append(user_id_cursor)
+                temp_author_connections = self._db.create_temp_author_connections(author_id, follower_ids, "follower",
+                                                                                  self._window_start)
+                self._total_author_connections = self._total_author_connections + temp_author_connections
 
-            temp_author_connections = self._db.create_temp_author_connections(author_id, follower_ids, "follower",
-                                                                              self._window_start)
-            self._total_author_connections = self._total_author_connections + temp_author_connections
+                if len(self._total_author_connections) > 1000000:
+                    self._db.addPosts(self._total_author_connections)
+                    # self._db.addPosts(user_ids_cursors)
+                    self._total_author_connections = []
+                    # user_ids_cursors = []
 
-            if len(self._total_author_connections) > 1000000:
-                self._db.addPosts(self._total_author_connections)
-                self._db.addPosts(user_ids_cursors)
-                self._total_author_connections = []
-                user_ids_cursors = []
+            except TwitterError as e:
+                logging.info(e.message)
+                if e.message == "Not authorized.":
+                    logging.info("Not authorized for user id: " + str(author_id))
+                    continue
+
+
+            # user_id_cursor = TwitterUserIdFollowersNextCursor()
+            # user_id_cursor.user_id = author_id
+            # user_id_cursor.cursor = cursor
+            #
+            # user_ids_cursors.append(user_id_cursor)
+
+
 
         self._db.addPosts(self._total_author_connections)
-        self._db.addPosts(user_ids_cursors)
+        #self._db.addPosts(user_ids_cursors)
 
     def fill_followers_and_their_data_simultaneously(self, author_ids):
 

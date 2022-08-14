@@ -5025,3 +5025,20 @@ class DB():
         query = text(query)
         self.session.execute(query)
         self.session.commit()
+
+    def get_english_speakers_non_protected_users(self):
+        q = """
+            SELECT authors.author_osn_id
+            FROM authors
+            WHERE authors.protected = 0
+            AND authors.author_screen_name IN (
+	            SELECT DISTINCT posts.author
+	            FROM posts
+	            WHERE posts.language = "en"
+            )
+            """
+        query = text(q)
+        result = self.session.execute(query)
+        cursor = result.cursor
+        author_ids = self.result_iter(cursor)
+        return [int(author_id[0]) for author_id in author_ids]

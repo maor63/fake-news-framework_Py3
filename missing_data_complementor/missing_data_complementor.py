@@ -17,6 +17,7 @@ from social_network_crawler.social_network_crawler import SocialNetworkCrawler
 from twitter_rest_api.twitter_rest_api import Twitter_Rest_Api
 import csv
 import requests
+from tqdm import tqdm
 
 RetweetData = namedtuple('RetweetData', ['retweet_guid', 'retweet_url', 'tweet_guid', 'tweet_url', 'tweet_author_name',
                                          'tweet_author_guid',
@@ -56,15 +57,22 @@ class MissingDataComplementor(Method_Executor):
     def fill_follower_ids(self):
         cursor = self._db.get_followers_or_friends_candidats("follower", self._domain,
                                                              self._limit_friend_follower_number)
+
+
         #commented only for 500+ POIs V6 Healthcare provided by Idan Cohen
         followers_or_friends_candidats = self._db.result_iter(cursor)
-        followers_or_friends_candidats = [author_id[0] for author_id in followers_or_friends_candidats]
+        followers_or_friends_candidats = [int(author_id[0]) for author_id in followers_or_friends_candidats]
 
 
         self._social_network_crawler = SocialNetworkCrawler(self._db)
 
         self._social_network_crawler.fill_followers_ids_only(followers_or_friends_candidats)
 
+    def fill_followers_for_english_speker_authors_non_protected(self):
+        author_ids = self._db.get_english_speakers_non_protected_users()
+        self._social_network_crawler = SocialNetworkCrawler(self._db)
+
+        self._social_network_crawler.fill_followers_ids_only(author_ids)
 
     def fill_followers_ids_for_POIs(self):
 
@@ -583,6 +591,22 @@ class MissingDataComplementor(Method_Executor):
     def assign_acquired_and_crowd_turfer_profiles(self):
         self._db.assign_crowdturfer_profiles()
         self._db.assign_acquired_profiles()
+
+    def assign_pro_and_anti_vaccine_users(self):
+        authors = self._db.get_authors()
+        screen_name_author_dict = {author.author_screen_name: author for author in authors}
+
+        df = pd.read_csv(self._output_path + "Labeled_authors_by_abigial_20220814.csv")
+        authors_to_label = []
+        for index, row in tqdm(df.iterrows()):
+            author_screen_name = row["Username"]
+            label = row["Label"]
+
+            author_to_label = screen_name_author_dict[author_screen_name]
+            author_to_label.author_type = label
+            authors_to_label.append(author_to_label)
+
+        self._db.addPosts(authors_to_label)
 
     def _create_author_screen_name_number_of_posts_dictionary(self, author_screen_names_number_of_posts):
         author_screen_names_number_of_posts_dict = {}
