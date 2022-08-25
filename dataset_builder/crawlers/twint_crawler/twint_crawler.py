@@ -11,6 +11,7 @@ import re
 import twint
 from commons.commons import *
 from twint.token import RefreshTokenException
+from aiohttp import ClientConnectorError
 import nest_asyncio
 nest_asyncio.apply()
 
@@ -23,6 +24,11 @@ class TwintCrawler(Method_Executor):
         self._output_file_path = self._config_parser.get(self.__class__.__name__, "output_file_path")
         self._since = self._config_parser.get(self.__class__.__name__, "since")
         self._until = self._config_parser.get(self.__class__.__name__, "until")
+        self.__not_timelines_screen_name_file_name = self._config_parser.get(self.__class__.__name__,
+                                                                             "not_timelines_screen_name_file_name")
+
+        self.__checked_authors = []
+        self.__checked_users_df = pd.DataFrame([], columns=["Username"])
 
     def get_tweets_by_terms(self):
         t = twint.Config()
@@ -89,7 +95,8 @@ class TwintCrawler(Method_Executor):
         while True:
             print("current_path: " + "{0}-{1}".format(self._since, self._until))
             current_path = os.path.join(self._output_file_path, "{0}-{1}/".format(self._since, self._until))
-            os.mkdir(current_path)
+            if not os.path.exists(current_path):
+                os.mkdir(current_path)
 
             for author in tqdm(authors_for_twint):
                 self._save_timeline_by_author_name(t, author, current_path)
@@ -111,34 +118,90 @@ class TwintCrawler(Method_Executor):
             # t.Output = self._output_file_path + f"{author[6::]}.csv"  # path to csv file
             # twint.run.Search(t)
 
+    def __handle_exception(self, t, author, current_path):
+        print(author)
+        count_down_time(900)
+
+        df = pd.DataFrame(self.__checked_authors, columns=["Username"])
+        self.__checked_users_df = self.__checked_users_df.append(df, ignore_index=True)
+        self.__checked_users_df.to_csv(self._output_file_path + "checked_author_screen_names.csv", index=False)
+        self.__checked_authors = []
+        del df
+
+        #self._save_timeline_by_author_name(t, author, current_path)
+
     def fill_timelines_for_missing_users(self):
+
         authors = self._db.get_authors()
         author_screen_names = [author.author_screen_name for author in authors]
 
-        already_crawled_timeline_files = os.listdir(self._output_file_path)
+        current_path = os.path.join(self._output_file_path, "{0}-{1}/".format(self._since, self._until))
+
+        already_crawled_timeline_files = os.listdir(current_path)
         already_crawled_users = [file.split(".csv")[0] for file in already_crawled_timeline_files]
 
-        missing_author_screen_names = list(set(author_screen_names) - set(already_crawled_users))
+        not_timelines_screen_names = []
+        full_path_file = self._output_file_path + self.__not_timelines_screen_name_file_name
+        if os.path.isfile(full_path_file):
+            df = pd.read_csv(full_path_file)
+            not_timelines_screen_names = df["Username"].tolist()
+
+
+        missing_author_screen_names = list(set(author_screen_names) - set(already_crawled_users) - set(not_timelines_screen_names))
 
 
         authors_for_twint = [f"from:@{screen_name}" for screen_name in missing_author_screen_names]
 
         t = twint.Config()
 
-        for author in tqdm(authors_for_twint):
-            try:
-                self._save_timeline_by_author_name(t, author)
+        while True:
+            print("current_path: " + "{0}-{1}".format(self._since, self._until))
+            current_path = os.path.join(self._output_file_path, "{0}-{1}/".format(self._since, self._until))
+            if not os.path.exists(current_path):
+                os.mkdir(current_path)
 
-            except RefreshTokenException:
-                print(author)
-                count_down_time(900)
-                self._save_timeline_by_author_name(t, author)
+            for author in tqdm(authors_for_twint):
+                try:
+                    author_name = author.split("from:@")[1]
+                    self.__checked_authors.append(author_name)
+                    self._save_timeline_by_author_name(t, author, current_path)
 
-            except TimeoutError as e:
-                print(e)
-                print(author)
-                count_down_time(900)
-                self._save_timeline_by_author_name(t, author)
+                except RefreshTokenException as e:
+                    print(e)
+                    self.__handle_exception(t, author, current_path)
+                    # print(author)
+                    # count_down_time(900)
+                    try:
+                        self._save_timeline_by_author_name(t, author, current_path)
+                    except RefreshTokenException as e:
+                        self.__handle_exception(t, author, current_path)
+                        self._save_timeline_by_author_name(t, author, current_path)
+
+                except TimeoutError as e:
+                    print(e)
+                    self.__handle_exception(t, author, current_path)
+                    # print(author)
+                    # count_down_time(900)
+                    self._save_timeline_by_author_name(t, author, current_path)
+
+                except ClientConnectorError as e:
+                    print(e)
+                    self.__handle_exception(t, author, current_path)
+                    #print(e)
+                    # print(author)
+                    # count_down_time(900)
+                    self._save_timeline_by_author_name(t, author, current_path)
+
+                except:
+                    self.__handle_exception(t, author, current_path)
+                    # print(author)
+                    # count_down_time(900)
+                    self._save_timeline_by_author_name(t, author, current_path)
+
+
+            self.__update_since_and_until_for_new_iteration()
+            authors_for_twint = [f"from:@{screen_name}" for screen_name in author_screen_names]
+            count_down_time(100)
 
         print("Done!!!")
 
