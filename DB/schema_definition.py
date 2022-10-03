@@ -5036,6 +5036,10 @@ class DB():
 	            FROM posts
 	            WHERE posts.language = "en"
             )
+			AND authors.author_guid NOT IN (
+				SELECT DISTINCT author_connections.source_author_guid
+				FROM author_connections		
+			)
             """
         query = text(q)
         result = self.session.execute(query)
